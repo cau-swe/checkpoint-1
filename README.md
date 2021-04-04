@@ -1,13 +1,15 @@
  <h2 align="center"> :pizza: 피자 서비스  </h2>     
  </br>
 <div align="center">
-  
+
+![CAU SWE](https://img.shields.io/badge/CAU--blue) ![Pizza](https://img.shields.io/badge/Pizza--red) ![Software-Engineering](https://img.shields.io/badge/SoftwareEngineering--yellow) 
+
    피자를 시킬 수 있는 최고의 서비스를 만들고자 하는 소프트웨어공학 2분반 팀프로젝트 README.md 에 오신걸 환영합니다! 
    
   <br>
   
  **Team Members**  
-| **김경준** | **박정미** |  **임정택** | **임정택** | **정상민** |  **선민승** |
+| **김경준** | **박정미** |  **유창선** | **임정택** | **정상민** |  **선민승** |
 |:-----:|:-----:|:------:|:-----:|:-----:|:------:|
  |github|github|github|github|github|[MinseungSeon](https://github.com/minseungseon) |
 </div>  
@@ -30,3 +32,14 @@
 관리자가 online pizza ordering system에 접속하면, username과 password를 입력하는 창이 뜨고 해당 정보를 입력하여 로그인을 합니다. 시스템에 접속하면 상단에 “Add Pizza”, “Edit Pizza”, “Update Order Status”, “View Feedback” 4개의 옵션이 있습니다. “Add Pizza”를 눌러 피자 사이즈와 사진, 이름, 설명, 가격을 입력하여 새로운 피자의 정보를 입력하여 추가합니다. “Edit Pizza”를 선택하면 기존 피자들에 대해 변경사항이 있을 경우 정보를 수정할 수도, 삭제할 수도 있습니다. 또한 “Update Order Status”에서는 주문 정보 리스트를 확인하고, 다 만들어지고 배달이 시작된 주문건은 배달 중, 배달이 완료된 주문은 배달 완료로 상태를 업데이트합니다. "View Feedback"을 선택하면 유저들이 남긴 리뷰들을 볼 수 있습니다.
 
 주문자도 시스템에 처음 접속하여 username과 password를 입력하여 로그인합니다. 상단에는 “Menu”, “View Cart”, “Track Order”, “Feedback” 4가지 옵션이 있습니다. “Menu”를 선택하여 메뉴 중에 원하는 피자를 선택하고 수량과 요청사항을 입력하고 장바구니 혹은 지금 구매를 누릅니다. 주문이 완료되면 “Track Order”에서 주문 상태와 예상시간을 확인할 수 있으며, "Feedback"에 들어가 리뷰를 남길 수 있습니다.
+
+
+</br>
+
+ <h2 align="center">  :adhesive_bandage: requirements  </h2>   
+ 
+  ##### 1. [customer](Customer.md)
+  ##### 2. [employee](Employee.md)
+  ##### 3. [administrator](Administrator.md)
+
+
