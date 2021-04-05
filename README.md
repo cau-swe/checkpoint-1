@@ -11,7 +11,7 @@
  **Team Members**  
 | **김경준** | **박정미** |  **유창선** | **임정택** | **정상민** |  **선민승** |
 |:-----:|:-----:|:------:|:-----:|:-----:|:------:|
- |github|github|github|[TedLeem](https://github.com/TedLeem)|github|[MinseungSeon](https://github.com/minseungseon) |
+ |[kouz95](https://github.com/kouz95)|[Jummi10](https://github.com/Jummi10)|[yoochangseon](yoochangseon/https://github.com/yoochangseon)|[TedLeem](https://github.com/TedLeem)|[Topslug](https://github.com/Topslug)|[MinseungSeon](https://github.com/minseungseon) |
 </div>  
 
 
