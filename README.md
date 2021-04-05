@@ -11,7 +11,7 @@
  **Team Members**  
 | **김경준** | **박정미** |  **유창선** | **임정택** | **정상민** |  **선민승** |
 |:-----:|:-----:|:------:|:-----:|:-----:|:------:|
- |github|github|github|github|github|[MinseungSeon](https://github.com/minseungseon) |
+ |github|github|github|[TedLeem](https://github.com/TedLeem)|github|[MinseungSeon](https://github.com/minseungseon) |
 </div>  
 
 
