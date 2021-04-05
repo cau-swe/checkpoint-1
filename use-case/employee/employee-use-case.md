@@ -30,3 +30,98 @@
 |  Max PW  |      |  4   |  1   |  2   |  2   |  2   |  4   |
 | Total PW |      |  12  |  1   |  2   |  2   |  2   |  4   |
 
+
+### Schema for Detailed Use Cases
+
+| Use Case UC-1:                            | AuthenticateEmployee                                         |
+| ----------------------------------------- | ------------------------------------------------------------ |
+| Related Requirement:                      | FR1, FR2, FR3, FR4, FR5                                      |
+| Initiating Actor:                         | Employee                                                     |
+| Actor's Goal:                             | - 종업원으로써 사용할 수 있는 기능을 사용하기 위하여, 자신이 종업원 임을 인증한다. |
+| Participating Actors:                     | X                                                            |
+| Preconditions:                            | - 회원 가입이 되어있어야한다.                                |
+|                                           | - 종업원으로 등록 되어있어야 한다.                           |
+| Postconditions:                           | - 종업원을 주문 관리 페이지로 접속 시킨다.                   |
+| Flow of Events for Main Success Scenario: |                                                              |
+| →                                         | 1. 홈페이지 접속에 접속하여 로그인 버튼을 누른다.            |
+| →                                         | 2. 로그인 창에 자신의 아이디와 비밀번호를 입력한다.          |
+| ←                                         | 3. 종업원 인증에 성공하고, 주문 관리 권한을 얻는다.          |
+
+---
+
+| Use Case UC-2:                            | FindOrderList                                       |
+| ----------------------------------------- | --------------------------------------------------- |
+| Related Requirement:                      | FR2                                                 |
+| Initiating Actor:                         | Employee                                            |
+| Actor's Goal:                             | - 주문을 관리하기 위하여 모든 주문 정보를 조회한다. |
+| Participating Actors:                     | X                                                   |
+| Preconditions:                            | - 주문이 존재해야 한다.                             |
+| Postconditions:                           | X                                                   |
+| Flow of Events for Main Success Scenario: |                                                     |
+| →                                         | 1. 주문 관리 페이지에 접속한다.                     |
+| ←                                         | 2. 모든 주문 정보 리스트를 전달 받는다.             |
+
+---
+
+| Use Case UC-3:                            | FindOrderer                                        |
+| ----------------------------------------- | -------------------------------------------------- |
+| Related Requirement:                      | FR3                                                |
+| Initiating Actor:                         | Employee                                           |
+| Actor's Goal:                             | - 배달에 필요한 주문자 정보를 조회한다.            |
+| Participating Actors:                     | Customer                                           |
+| Preconditions:                            | - 고객이 회원 가입하여 주문자 정보를 등록해야한다. |
+|                                           | - 고객이 피자를 주문해야한다.                      |
+| Postconditions:                           | X                                                  |
+| Flow of Events for Main Success Scenario: |                                                    |
+| →                                         | 1. 주문 정보 리스트에서 주문을 선택한다.           |
+| →                                         | 2. 주문 정보 중 주문자 정보 조회를 선택한다.       |
+| ←                                         | 3. 고객의 주소와 핸드폰 번호를 전달 받는다.        |
+
+---
+
+| Use Case UC-4:                            | FindOrderDetail                            |
+| ----------------------------------------- | ------------------------------------------ |
+| Related Requirement:                      | FR4                                        |
+| Initiating Actor:                         | Employee                                   |
+| Actor's Goal:                             | - 주문 상세 정보를 조회한다.               |
+| Participating Actors:                     | X                                          |
+| Preconditions:                            | - 주문이 존재해야 한다.                    |
+| Postconditions:                           | X                                          |
+| Flow of Events for Main Success Scenario: |                                            |
+| →                                         | 1. 주문 정보 리스트에서 주문을 선택한다.   |
+| →                                         | 2. 주문 정보 중 주문 상세 조회를 선택한다. |
+| ←                                         | 3. 주문의 메뉴와 개수를 전달 받는다.       |
+
+---
+
+| Use Case UC-5:                            | FindAdditionalOrderLine                    |
+| ----------------------------------------- | ------------------------------------------ |
+| Related Requirement:                      | FR3                                        |
+| Initiating Actor:                         | Employee                                   |
+| Actor's Goal:                             | - 고객의 추가 요청 사항을 조회한다.        |
+| Participating Actors:                     | X                                          |
+| Preconditions:                            | - 주문이 존재해야 한다.                    |
+|                                           | - 주문에 추가 요청 사항이 존재해야 한다.   |
+| Postconditions:                           | X                                          |
+| Flow of Events for Main Success Scenario: |                                            |
+| →                                         | 1. 주문 정보 리스트에서 주문을 선택한다.   |
+| →                                         | 2. 주문 정보 중 추가 요청 사항을 선택한다. |
+| ←                                         | 3. 고객의 추가 요청 사항을 전달 받는다.    |
+
+---
+
+| Use Case UC-6:                            | ChangeOrderState                                             |
+| ----------------------------------------- | ------------------------------------------------------------ |
+| Related Requirement:                      | FR5                                                          |
+| Initiating Actor:                         | Employee                                                     |
+| Actor's Goal:                             | - 주문의 상태를 변경한다.                                    |
+| Participating Actors:                     | X                                                            |
+| Preconditions:                            | - 주문이 존재해야 한다.                                      |
+| Postconditions:                           | X                                                            |
+| Flow of Events for Main Success Scenario: |                                                              |
+| →                                         | 1. 주문 정보 리스트에서 주문을 선택한다.                     |
+| →                                         | 2. 주문 상태 변경을 선택한다.                                |
+| →                                         | 3. 주문 상태를 다음 단계 혹은 이전 단계로 변경한다. (대기 중 ↔ 준비중 ↔ 배달 중 ↔ 배달 완료) |
+| →                                         | 4. 변경 완료를 선택한다.                                     |
+| ←                                         | 5. 주문 상태가 변경된다.                                     |
+
