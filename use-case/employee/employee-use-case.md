@@ -16,3 +16,17 @@
 
 ![AccountManagement](./AccountManagement.png)  
 
+
+
+### Traceability Matrix
+
+|  Req't   |  PW  | UC1  | UC2  | UC3  | UC4  | UC5  | UC6  |
+| :------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|   REQ1   |  3   |  X   |      |      |      |      |      |
+|   REQ2   |  1   |  X   |  X   |      |      |      |      |
+|   REQ3   |  2   |  X   |      |  X   |      |  X   |      |
+|   REQ4   |  2   |  X   |      |      |  X   |      |      |
+|   REQ5   |  4   |  X   |      |      |      |      |  X   |
+|  Max PW  |      |  4   |  1   |  2   |  2   |  2   |  4   |
+| Total PW |      |  12  |  1   |  2   |  2   |  2   |  4   |
+
