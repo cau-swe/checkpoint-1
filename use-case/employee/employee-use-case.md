@@ -8,3 +8,11 @@
 | Employee | 주문 추가 요청 사항 조회 | FindAdditionalOrderLine(UC-5) |
 | Employee |      주문 상태 변경      |    ChangeOrderState(UC-6)     |
 
+### Use Case Diagram
+
+![OrderManagement](./OrderManagement.png)
+
+---
+
+![AccountManagement](./AccountManagement.png)  
+
