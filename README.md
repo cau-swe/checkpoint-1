@@ -33,6 +33,15 @@
 
 주문자도 시스템에 처음 접속하여 username과 password를 입력하여 로그인합니다. 상단에는 “Menu”, “View Cart”, “Track Order”, “Feedback” 4가지 옵션이 있습니다. “Menu”를 선택하여 메뉴 중에 원하는 피자를 선택하고 수량과 요청사항을 입력하고 장바구니 혹은 지금 구매를 누릅니다. 주문이 완료되면 “Track Order”에서 주문 상태와 예상시간을 확인할 수 있으며, "Feedback"에 들어가 리뷰를 남길 수 있습니다.
 
+##### 고객 입장의 Scenario
+
+
+##### 관리자 입장의 Scenario
+
+
+##### 직원 입장의 Scenario
+
+
 
 </br>
 
