@@ -33,19 +33,27 @@
 
 ### Schema for Detailed Use Cases
 
-| Use Case UC-1:                            | AuthenticateEmployee                                         |
-| ----------------------------------------- | ------------------------------------------------------------ |
-| Related Requirement:                      | FR1, FR2, FR3, FR4, FR5                                      |
-| Initiating Actor:                         | Employee                                                     |
-| Actor's Goal:                             | - 종업원으로써 사용할 수 있는 기능을 사용하기 위하여, 자신이 종업원 임을 인증한다. |
-| Participating Actors:                     | X                                                            |
-| Preconditions:                            | - 회원 가입이 되어있어야한다.                                |
-|                                           | - 종업원으로 등록 되어있어야 한다.                           |
-| Postconditions:                           | - 종업원을 주문 관리 페이지로 접속 시킨다.                   |
-| Flow of Events for Main Success Scenario: |                                                              |
-| →                                         | 1. 홈페이지 접속에 접속하여 로그인 버튼을 누른다.            |
-| →                                         | 2. 로그인 창에 자신의 아이디와 비밀번호를 입력한다.          |
-| ←                                         | 3. 종업원 인증에 성공하고, 주문 관리 권한을 얻는다.          |
+| Use Case UC-1: | AuthenticateEmployee |
+|-----------------|----------------------|
+|Related Requirement: |FR1, FR2, FR3, FR4, FR5|
+|Initiating Actor:| Employee |
+|Actor's Goal:| - 종업원으로써 사용할 수 있는 기능을 사용하기 위하여, 자신이 종업원 임을 인증한다.|
+|Participating Actors: |X|
+|Preconditions: |- 회원 가입이 되어있어야한다.|
+||- 종업원으로 등록 되어있어야 한다.|
+|Postconditions: |- 종업원을 주문 관리 페이지로 접속 시킨다.|
+|Flow of Events for Main Success Scenario: ||
+|→|1. 홈페이지 접속에 접속하여 로그인 버튼을 누른다. |
+|→|2. 로그인 창에 자신의 아이디와 비밀번호를 입력한다. |
+|←|3. 종업원 인증에 성공하고, 주문 관리 권한을 얻는다. |
+|Flow of Events for Extensions (Alternate Scenarios): ||
+||2a. 입력한 아이디, 비밀번호와 일치하는 회원이 존재하지 않는다.|
+|←|1. 입력한 정보와 일치하는 회원이 없다는 것을 감지하고, 잘못된 정보를 입력했다라는 알림을 표시한다.|
+|←|2. 로그인 페이지로 이동한다.|
+||2b. 종업원의 계정이 Employee 권한을 얻지 못했다.|
+|←|1. 입력한 정보와 일치하는 회원의 권한이 Employee 혹은 Administrator가 아님을 시스템이 감지하고, 권한이 없는 사용자라는 알림을 표시한다.|
+|←|2. 로그인 페이지로 이동한다.|
+
 
 ---
 
