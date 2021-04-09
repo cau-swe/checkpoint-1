@@ -38,3 +38,62 @@
 
 
 ### Schema for Detailed Use Cases
+
+| Use Case UC-2:                            | 장바구니                                      |
+| ----------------------------------------- | --------------------------------------------------- |
+| Related Requirement:                      | FR5, FR6                                                |
+| Initiating Actor:                         | 고객                                            |
+| Actor's Goal:                             | 장바구니를 보고 선택한 피자 목록을 보고 수정할 수 있어야 한다.  |
+| Participating Actors:                     | X                                                   |
+| Preconditions:                            | 원하는 피자를 선택 했어야 한다.                           |
+| Postconditions:                           | X                                                   |
+| Flow of Events for Main Success Scenario: |                                                     |
+| →                                         | 1. 장바구니를 선택한다.                     |
+| ←                                         | 2. 고객이 선택한 피자 목록을 보여준다.             |
+| →                                         | 3. 선택한 피자에 대해 수정 및 취소를 한다.                     |
+| ←                                         | 4. 수정 및 취소가 된 장바구니를 보여준다.            |
+
+---
+
+| Use Case UC-4:                            | 주문 정보 확인                                      |
+| ----------------------------------------- | --------------------------------------------------- |
+| Related Requirement:                      | FR9, FR10                                                |
+| Initiating Actor:                         | 고객                                            |
+| Actor's Goal:                             | 주문이 정상적으로 들어갔음과 배달 현황/픽업 시간을 확인할 수 있어야 한다.  |
+| Participating Actors:                     | 타이머                                                   |
+| Preconditions:                            | 1.결제가 완료 되어 있어야 한다.
+|                                           | 2.배달/픽업 시간의 타이머가 작동해야한다.                    |
+| Postconditions:                           | X                                                   |
+| Flow of Events for Main Success Scenario: |                                                     |
+| →                                         | 1. 주문 정보 확인을 선택한다.                     |
+| ←                                         | 2. 주문 정보와 주문 상태(배달 상황 등)을 보여준다.            |
+
+---
+
+| Use Case UC-6:                            | 리뷰 보기                                      |
+| ----------------------------------------- | --------------------------------------------------- |
+| Related Requirement:                      | FR4                                                |
+| Initiating Actor:                         | 고객                                            |
+| Actor's Goal:                             | 피자 메뉴에 대한 리뷰를 확인할 수 있어야 한다.  |
+| Participating Actors:                     | X                                                   |
+| Preconditions:                            | 리뷰들이 존재해야 한다.
+| Postconditions:                           | X                                                   |
+| Flow of Events for Main Success Scenario: |                                                     |
+| →                                         | 1. 리뷰를 보고 싶은 피자를 선택한다.             |
+| ←                                         | 2. 해당 피자에 대한 리뷰를 보여준다.            |
+
+---
+
+| Use Case UC-8:                            | 결제하기                                      |
+| ----------------------------------------- | --------------------------------------------------- |
+| Related Requirement:                      | FR8, FR9, FR10, FR11                                                |
+| Initiating Actor:                         | 고객                                            |
+| Actor's Goal:                             | 장바구니를 보고 선택한 피자 목록을 보고 수정할 수 있어야 한다.  |
+| Participating Actors:                     | X                                                   |
+| Preconditions:                            | 원하는 피자를 선택 했어야 한다.                           |
+| Postconditions:                           | X                                                   |
+| Flow of Events for Main Success Scenario: |                                                     |
+| →                                         | 1. 결제하기를 선택한다.                     |
+| ←                                         | 2. 결제 금액을 고객에게 알려준다.             |
+| →                                         | 3. 결제를 한다.                     |
+| ←                                         | 4. 결제가 완료 되었음을 고객에게 알려준다.            |
