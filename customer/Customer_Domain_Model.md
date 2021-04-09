@@ -132,8 +132,8 @@
 | Controller ↔ Page Maker           | Controller는 페이지 생성에 필요한 데이터를 전달한다.           | conveys request  |
 | Page Maker ↔ Payment Page  | Page Maker는 피자를 결제하기 위한 페이지를 만든다.      | prepares         |
 | Database Connection ↔ Page Maker   | PageMaker는 Database Connection로부터 주문 상세 정보와 주문 상태를 전달받는다. | provides data    |
-| Database Connection ↔ Calculator  | Calculator는 Database Connection로부터 계산을 위해 결제하려는 피자의 가격 정보를  전달받는다. | provides data  |
-| Calculator ↔  Payment Page  | Calculator는 Payment Page에 계산 총 피자 가격을 전달해준다. | conveys request |
+| Calculator ↔ Database Connection  | Calculator는 Database Connection에게 가격을 계산하고 전달해준다. | calculates data  |
+
 
 
 ### Extracting the Attributes
