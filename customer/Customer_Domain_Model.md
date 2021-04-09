@@ -31,7 +31,7 @@
 | ------------- | ----------------- | ------------------------------------------------------------ |
 | SearchRequest | Customer ID | 장바구니를 조회하기 위한 고객 ID를 가지고 . |
 
-![UC-2](./UC-2.png)
+![Domain Model(UC2)](./DomainModel(UC2).png)
 
 ---
 
@@ -69,7 +69,7 @@
 | SearchRequest | Order Id | 해당 주문의 ID(정보)를 가지고 있다. |
 | Nofitier | Time Info | 해당 주문의 시간 정보를 가지고 있다. |
 
-![UC-4](./UC-4.png)
+![Domain Model(UC4)](./DomainModel(UC4).png)
 
 ---
 
@@ -105,7 +105,7 @@
 | SearchRequest | Pizza ID | 해당 피자 이름(ID)을 가지고 있다. |
 
 
-![UC-6](./UC-6.png)
+![Domain Model(UC6)](./DomainModel(UC6).png)
 
 ---
 
@@ -143,4 +143,4 @@
 | SearchRequest | Pizza ID | 해당 피자 이름(ID)을 가지고 있다. |
 | Calculator | Pizza Price |  해당 피자의 가격 정보를 가지고 있다.   |
 
-![UC-8](./UC-8.png)
+![Domain Model(UC8)](./DomainModel(UC8).png)
