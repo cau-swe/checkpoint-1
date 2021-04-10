@@ -1,6 +1,23 @@
 # Domain Model
+## UC-1 메뉴(피자)보기
+### Extracting the Responsibility
+| Responsibility Description                                   | Type | Concept Name        |
+| ------------------------------------------------------------ | :--: | ------------------- |
+| Use Case와 관련된 모든 컨셉들의 행동을 관리하고, 적절한 컨셉에게 위임한다. |  D   | Controller          |
+| 피자 메뉴를 보여주기 위한 HTML 문서                |  K   | Menu Page       |
+| 디스플레이로 피자 메뉴 페이지를 생성한다.                                 |  D   | PageMaker           |
+| 데이터베이스로부터 모든 피자메뉴에 대한 정보를 불러온다.  |  D   | Database Connection  |
 
+### Extracting the Associations
 
+| Concept Pair                     | Association Description                                      | Association Name |
+| -------------------------------- | ------------------------------------------------------------ | ---------------- |
+| Controller ↔ Database Connection  | Controller는 DataBaseConnection에게 전체 피자메뉴에 대한 조회를 요청을 하고 받는다. | conveys request  |
+| Controller ↔ Menu Page           |  Controller는 Menu Page를 사용자에게 전달한다.        | Conveys page           |
+| Controller ↔ Page Maker           |  Controller는 페이지 생성에 필요한 데이터를 전달한다.           | conveys request  |
+| Page Maker ↔ Menu Page  | Page Maker는 모든 피자정보를 반영하여 페이지를 만든다.       | prepares         |
+
+---
 ## UC-2 장바구니
 ### Extracting the Responsibility
 
@@ -34,8 +51,34 @@
 ![Domain Model(UC2)](./DomainModel(UC2).png)
 
 ---
+## UC-3 주문하기
+### Extracting the Responsibility
 
+| Responsibility Description                                   | Type | Concept Name        |
+| ------------------------------------------------------------ | :--: | ------------------- |
+| Use Case와 관련된 모든 컨셉들의 행동을 관리하고, 적절한 컨셉에게 위임한다. |  D   | Controller          |
+| 주문에 대한 요청                |  K   | Order Request      |
+| 주문관련 페이지를 보여주기 위한 HTML 문서                              |  K   | Order Page |
+| 디스플레이하기 위한 HTML 문서를 생성한다.                                        |  D   | Page Maker           |
+| 데이터베이스로 주문에 대한 정보를 저장한다.    |  D   | Database Connection  |
 
+### Extracting the Associations
+
+| Concept Pair                     | Association Description                                      | Association Name |
+| -------------------------------- | ------------------------------------------------------------ | ---------------- |
+| Order Request ↔ Controller       | Controller는 주문에 대해 필요한 여러 정보들을 요청을 받는다.             | receives         |
+| Controller ↔ Database Connection  | Controller는 Database Connection에게  데이터 저장을 요청한다. | conveys request  |
+| Controller ↔ Order  Page | Controller는 Order Page를 사용자에게 전달한다.        | posts            |
+| Controller ↔ Page Maker           | Controller는 페이지 생성과 업데이트에 필요한 데이터를 전달한다.           | conveys request  |
+| Page Maker ↔ Orde Info Page  | Page Maker는 주문 주문 페이지를 생성하고 주문 완료되었음을 반영한다.       | prepares         |
+
+### Extracting the Attributes
+
+| Concept       | Attributes        | Attribute Description                                        |
+| ------------- | ----------------- | ------------------------------------------------------------ |
+| Order Request | Customer ID , Order Id | 주문하기위한 고객 ID와 주문상품에대한 ID|
+
+---
 ## UC-4 주문정보 확인
 ### Extracting the Responsibility
 
@@ -72,7 +115,37 @@
 ![Domain Model(UC4)](./DomainModel(UC4).png)
 
 ---
+## UC-5 리뷰 작성하기
+### Extracting the Responsibility
 
+| Responsibility Description                                   | Type | Concept Name        |
+| ------------------------------------------------------------ | :--: | ------------------- |
+| Use Case와 관련된 모든 컨셉들의 행동을 관리하고, 적절한 컨셉에게 위임한다. |  D   | Controller          |
+| 입력 받은 리뷰에 대한 저장 요청            |  K   | Review Request       |
+| 리뷰 페이지를 보여주기 위한 HTML 문서                               |  K   | Review Page |
+| 디스플레이하기 위한 HTML 문서를 생성한다.                                        |  D   | Page Maker           |
+| 사용자가 주문한 메뉴에 대한정보를 데이터베이스로 받고 사용자가 작성한 리뷰에 대한 데이터를 저장함   |  D   | Database Connection  |
+
+### Extracting the Associations
+
+| Concept Pair                     | Association Description                                      | Association Name |
+| -------------------------------- | ------------------------------------------------------------ | ---------------- |
+| Review  Request ↔ Controller       | Controller는 조회에 대해 필요한 여러 정보들을 요청한다.
+컨트롤러는 리뷰 저장에 대해 필요한 여러정보 들을 입력받은 후 요청한다.
+                | receives         |
+| Controller ↔ Database Connection  | Controller는 Database Connection에게 데이터 저장을 요청한다. | conveys request  |
+| Controller ↔ Review Page | Controller는 해당 피자 Review 작성 Page를 고객에게 전달한다.       | posts            |
+| Controller ↔ Page Maker           | Controller는 페이지 생성에 필요한 데이터를 전달한다.           | conveys request  |
+| Page Maker ↔ Review Page           | Page Maker는 사용자가 주문한 피자 정보를 반영하여 리뷰 작성 페이지를 만든다.      | prepares         |
+
+
+### Extracting the Attributes
+
+| Concept       | Attributes        | Attribute Description                                        |
+| ------------- | ----------------- | ------------------------------------------------------------ |
+| Review Request | Customer ID , OrderId | 주문한 고객 ID와 주문상품에대한 ID|
+  
+---
 ## UC-6 리뷰보기
 ### Extracting the Responsibility
 
@@ -108,7 +181,34 @@
 ![Domain Model(UC6)](./DomainModel(UC6).png)
 
 ---
+## UC-7 수령방법 입력
+### Extracting the Responsibility
 
+| Responsibility Description                                   | Type | Concept Name        |
+| ------------------------------------------------------------ | :--: | ------------------- |
+| Use Case와 관련된 모든 컨셉들의 행동을 관리하고, 적절한 컨셉에게 위임한다. |  D   | Controller          |
+| 사용자가 입력한 수령방법과 주소에 대한 저장 요청                 |  K   | Receive Request  |
+| 수령방법 페이지를 보여주기 위한 HTML 문서                     |  K   | Select Page|
+| 디스플레이하기 위한 HTML 문서를 생성한다.          |  D   | Page Maker           |
+| 요청을 통해 받은 주소에 대하여 지도 검색    |  D   | Map Api  |
+
+### Extracting the Associations
+
+| Concept Pair                     | Association Description                                      | Association Name |
+| -------------------------------- | ------------------------------------------------------------ | ---------------- |
+| Receive Request ↔ Controller       | Controller는 조회에 필요한 조건들을 전달받는다.                | receives         |
+| Controller ↔ Map Api  | Controller는 요청을 통해 받은 주소를 통해 Map API에게 지도 검색를 요청을 하고 받는다. | conveys request  |
+| Controller ↔ Select Page | Controller는 결제하기 위한 Payment Page를 고객에게 전달한다.        | posts            |
+| Controller ↔ Page Maker           | Controller는 컨트롤러는 페이지 생성에 필요한 데이터(지도)를 전달한다          | conveys request  |
+| Page Maker ↔ Select Page  | Page Maker는 수령방법 페이지를 만들고 입력받은 주소에 대한 지도를 반영한다.       | prepares         |
+
+
+### Extracting the Attributes
+
+| Concept       | Attributes        | Attribute Description                                        |
+| ------------- | ----------------- | ------------------------------------------------------------ |
+| Receive Request | Customer ID , Recevie Param | 주문한 고객 ID와 수령 정보에 대한 매개변수를 |
+---
 ## UC-8 결제하기
 ### Extracting the Responsibility
 
@@ -144,3 +244,33 @@
 | Calculator | Pizza Price |  해당 피자의 가격 정보를 가지고 있다.   |
 
 ![Domain Model(UC8)](./DomainModel(UC8).png)
+
+---
+## UC-9 로그인
+### Extracting the Responsibility
+
+
+| Responsibility Description                                   | Type | Concept Name        |
+| ------------------------------------------------------------ | :--: | ------------------- |
+| Use Case와 관련된 모든 컨셉들의 행동을 관리하고, 적절한 컨셉에게 위임한다. |  D   | Controller          |
+| 사용자 정보에 대한 조회 요청                   |  K   | Get Request       |
+| 로그인 페이지를 보여주기 위한 HTML 문서                            |  K   | Login Page |
+| 디스플레이하기 위한 HTML 문서를 생성한다.                                        |  D   | Page Maker           |
+| 요청을 통해 받은 사용자 정보를 이용하여 데이터베이스에게 쿼리 요청    |  D   | Database Connection  |
+
+### Extracting the Associations
+
+| Concept Pair                     | Association Description                                      | Association Name |
+| -------------------------------- | ------------------------------------------------------------ | ---------------- |
+| Search Request ↔ Controller       | Controller는 조회에 필요한 조건들을 전달받는다.                | receives         |
+| Controller ↔ Database Connection  | Controller는 Database Connection에게 조건에 해당하는 데이터 조회를 요청한다. | conveys request  |
+| Controller ↔ Login Page | Controller는 결제하기 위한 Payment Page를 고객에게 전달한다.        | posts            |
+| Controller ↔ Page Maker           | Controller는 페이지 생성에 필요한 데이터를 전달한다.           | conveys request  |
+| Page Maker ↔ Login Page  | Page Maker는 로그인 페이지를 만들고 로그인 정보를 반영하여 페이지를 업데이트 한다.      | prepares         |
+
+### Extracting the Attributes
+
+| Concept       | Attributes        | Attribute Description                                        |
+| ------------- | ----------------- | ------------------------------------------------------------ |
+| Login Request | User ID | 로그인 ID|
+
