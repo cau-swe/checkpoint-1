@@ -30,7 +30,7 @@
 
 #### :email: Scenarios
 
-관리자가 online pizza ordering system에 접속하면, username과 password를 입력하는 창이 뜨고 해당 정보를 입력하여 로그인을 합니다. 시스템에 접속하면 상단에 “Add Pizza”, “Edit Pizza”, “Update Order Status”, “View Feedback” 4개의 옵션이 있습니다. “Add Pizza”를 눌러 피자 사이즈와 사진, 이름, 설명, 가격을 입력하여 새로운 피자의 정보를 입력하여 추가합니다. “Edit Pizza”를 선택하면 기존 피자들에 대해 변경사항이 있을 경우 정보를 수정할 수도, 삭제할 수도 있습니다. 또한 “Update Order Status”에서는 주문 정보 리스트를 확인하고, 다 만들어지고 배달이 시작된 주문건은 배달 중, 배달이 완료된 주문은 배달 완료로 상태를 업데이트합니다. "View Feedback"을 선택하면 유저들이 남긴 리뷰들을 볼 수 있습니다.
+관리자가 online pizza ordering system에 접속하면, username과 password를 입력하는 창이 뜨고 해당 정보를 입력하여 로그인을 합니다. 시스템에 접속하면 상단에 “Add Pizza”, “Edit Pizza”, “View Order Record”, “View Feedback”, "Manage Employee" 5개의 옵션이 있습니다. “Add Pizza”를 눌러 피자 사이즈와 사진, 이름, 설명, 가격을 입력하여 새로운 피자의 정보를 입력하여 추가합니다. “Edit Pizza”를 선택하면 기존 피자들에 대해 변경사항이 있을 경우 정보를 수정할 수도, 삭제할 수도 있습니다. 또한 “View Order Record”에서는 주문 정보 기록을 확인할 수 있습니다. "View Feedback"을 선택하면 유저들이 남긴 리뷰들을 볼 수 있습니다. "Manage Employee"를 선택하면 신규 직원을 고용했을 시 직원정보를 추가할 수 있고, 직원이 일을 그만두는 경우는 삭제할 수 있고, 직원에 대한 정보가 변경됐을시 정보를 수정할 수 있습니다. 직원에 대한 정보는 이름, 전화번호, 월급이 있습니다.
 
 주문자도 시스템에 처음 접속하여 username과 password를 입력하여 로그인합니다. 상단에는 “Menu”, “View Cart”, “Track Order”, “Feedback” 4가지 옵션이 있습니다. “Menu”를 선택하여 메뉴 중에 원하는 피자를 선택하고 수량과 요청사항을 입력하고 장바구니 혹은 지금 구매를 누릅니다. 주문이 완료되면 “Track Order”에서 주문 상태와 예상시간을 확인할 수 있으며, "Feedback"에 들어가 리뷰를 남길 수 있습니다.
 
