@@ -17,6 +17,8 @@
 | Controller ↔ Page Maker           |  Controller는 페이지 생성에 필요한 데이터를 전달한다.           | conveys request  |
 | Page Maker ↔ Menu Page  | Page Maker는 모든 피자정보를 반영하여 페이지를 만든다.       | prepares         |
 
+![Domain Model(UC1)](./DomainModel(UC1).jpg)
+
 ---
 ## UC-2 장바구니
 ### Extracting the Responsibility
@@ -77,6 +79,8 @@
 | Concept       | Attributes        | Attribute Description                                        |
 | ------------- | ----------------- | ------------------------------------------------------------ |
 | Order Request | Customer ID , Order Id | 주문하기위한 고객 ID와 주문상품에대한 ID|
+
+![Domain Model(UC3)](./DomainModel(UC3).jpg)
 
 ---
 ## UC-4 주문정보 확인
@@ -145,6 +149,8 @@
 | ------------- | ----------------- | ------------------------------------------------------------ |
 | Review Request | Customer ID , OrderId | 주문한 고객 ID와 주문상품에대한 ID|
   
+![Domain Model(UC5)](./DomainModel(UC5).jpg)
+
 ---
 ## UC-6 리뷰보기
 ### Extracting the Responsibility
@@ -208,6 +214,8 @@
 | Concept       | Attributes        | Attribute Description                                        |
 | ------------- | ----------------- | ------------------------------------------------------------ |
 | Receive Request | Customer ID , Recevie Param | 주문한 고객 ID와 수령 정보에 대한 매개변수를 |
+
+![Domain Model(UC7)](./DomainModel(UC7).jpg)
 ---
 ## UC-8 결제하기
 ### Extracting the Responsibility
@@ -274,3 +282,4 @@
 | ------------- | ----------------- | ------------------------------------------------------------ |
 | Login Request | User ID | 로그인 ID|
 
+![Domain Model(UC9)](./DomainModel(UC9).jpg)
