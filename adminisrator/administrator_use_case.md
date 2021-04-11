@@ -49,8 +49,8 @@ UC-1 include UC-6
 |  Max PW  |      |  5   |  5   |  4   |  4   |  2   |  2   |  5   |  5   |  5   |  5   |  5   |
 | Total PW |      |  24  |  5   |  4   |  4   |  2   |  2   |  8   |  8   |  5   |  9   |  8   |
 
-←
-→
+---
+
 | Use Case UC-1:                            |  Log in                                             |
 | ----------------------------------------- | --------------------------------------------------- |
 | Related Requirement:                      | REQ1,REQ2,REQ3,REQ4,REQ5,REQ6,REQ7,REQ8             |
@@ -70,6 +70,8 @@ UC-1 include UC-6
 | ←                                         | 1. System은 Administrator에게 잘못된 ID또는 잘못된 비밀번호라고 알려준다. |
 | →                                         | 2. Administrator는 ID와 비밀번호를 다시 입력한다.|
 |                                           | 3. 위에 3,4번과정과 같다.|
+
+---
 
 | Use Case UC-2:                            |  Add Pizza                                          |
 | ----------------------------------------- | --------------------------------------------------- |
@@ -92,6 +94,8 @@ UC-1 include UC-6
 | →                                         | 2. Administrator는 누락된 정보를 다시 입력한다.|
 |                                           | 3. 위에 4,5번과정과 같다.|
 
+---
+
 | Use Case UC-3:                            |  Edit Pizza                                          |
 | ----------------------------------------- | --------------------------------------------------- |
 | Related Requirement:                      | REQ3                                                |
@@ -113,6 +117,8 @@ UC-1 include UC-6
 | →                                         | 2. Administrator는 누락된 정보를 다시 입력한다.|
 |                                           | 3. 위에 4,5번과정과 같다.|
 
+---
+
 | Use Case UC-4:                            |  Delete Pizza                                          |
 | ----------------------------------------- | --------------------------------------------------- |
 | Related Requirement:                      | REQ3                                                |
@@ -129,6 +135,8 @@ UC-1 include UC-6
 | ←                                         | 4. System은 Database에 선택된 피자정보를 삭제한다.          |
 | ←                                         | 5. System은 Administrator에게 업데이트된 페이지를 보여준다. |
 
+---
+
 | Use Case UC-5:                            |  View Order Records                                 |
 | ----------------------------------------- | --------------------------------------------------- |
 | Related Requirement:                      | REQ4                                                |
@@ -142,6 +150,8 @@ UC-1 include UC-6
 | →                                         | 1. Order Records 버튼을 누른다.       |
 | ←                                         | 2. System은 Database에서 주문기록을 가져온 후 관리자에게 기록을 보여준다.   |
 
+---
+
 | Use Case UC-6:                            |  View Review                                        |
 | ----------------------------------------- | --------------------------------------------------- |
 | Related Requirement:                      | REQ5                                                |
@@ -152,9 +162,12 @@ UC-1 include UC-6
 |                                           | - 관리자페이지에서 Review 버튼을 보고있다.        |
 | Postconditions:                           | - 각 피자제품에 해당하는 고객의 Review를 볼 수 있다. |
 | Flow of Events for Main Success Scenario: |                                                     |
-| →                                         | 1. Review 버튼을 누른다.       |
-| ←                                         | 2. System은 Database에서 각 피자에 해당하는 Review정보를 가져온다.    |
-| ←                                         | 2. System은 Administrator에게 Review를 보여준다.    |
+| →                                         | 1. Review 버튼을 누른다.                            |
+| ←                                         | 2. System은 등록되어 있는 피자목록을 보여준다.       |
+| →                                         | 3. Administrator는 확인하고 싶은 Pizza를 선택한다.   |
+| ←                                         | 2. System은 Database에서 해당피자의 Review정보를 가져와서 Administrator에게 보여준다.     |
+
+---
 
 | Use Case UC-7:                            |  Add Employee                                       |
 | ----------------------------------------- | --------------------------------------------------- |
@@ -182,6 +195,8 @@ UC-1 include UC-6
 | →                                         | 2. Administrator는 권한을 다시 선택한다.|
 |                                           | 3. 위에 5,6번과정과 같다.|
 
+---
+
 | Use Case UC-8:                            |  Edit Employee                                       |
 | ----------------------------------------- | --------------------------------------------------- |
 | Related Requirement:                      | REQ6,REQ7,REQ8                                                |
@@ -208,6 +223,8 @@ UC-1 include UC-6
 | →                                         | 2. Administrator는 권한을 다시 선택한다.|
 |                                           | 3. 위에 5,6번과정과 같다.|
 
+---
+
 | Use Case UC-9:                            |  Delete Employee                                       |
 | ----------------------------------------- | --------------------------------------------------- |
 | Related Requirement:                      | REQ7                                               |
@@ -221,6 +238,8 @@ UC-1 include UC-6
 | →                                         | 1. 수정하고자하는 직원의 Delete 버튼을 누른다.       |
 | ←                                         | 2. System은 해당직원의 정보를 Database에서 삭제한다. |
 | ←                                         | 3. System은 Administrator에게 업데이트된 페이지를 보여준다. |
+
+---
 
 | Use Case UC-10:                           |  Manage Pizza                                       |
 | ----------------------------------------- | --------------------------------------------------- |
@@ -240,6 +259,8 @@ UC-1 include UC-6
 |3a. Add버튼을 클릭하면 새로운 피자정보를 추가한다.  | : include Add Pizza(UC-2)|
 |3b. Edit버튼을 클릭하면 기존의 피자정보를 수정한다. | : include Edit Pizza(UC-3)|
 |3c. Delete버튼을 클릭하면 해당 피자정보를 삭제한다. | : include Delete Pizza(UC-4)|
+
+---
 
 | Use Case UC-11:                           |  Manage Employee                                       |
 | ----------------------------------------- | --------------------------------------------------- |
