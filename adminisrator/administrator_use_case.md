@@ -28,12 +28,12 @@ UC-1 include UC-6
 
 |  Actor   |       Actor's Goal       |         Use Case Name         |
 |:--------:|:------------------------:|:-----------------------------:|
-| Administrator    |		시스템 접속후 관리자 권환획득  |	Log in
-| Administrator    |		피자정보 추가, 수정, 삭제     |	Manage Pizza, Add Pizza, Edit Pizza, Delete Pizza, Log in
-| Administrator    |		주문 기록 확인                |	View Order Records, Log in
-| Administrator    |		리뷰확인                      |	View Review, Log in
-| Administrator    |		직원정보 추가, 수정, 삭제	    | Manage Employee, Add Employee, Edit Employee, Delete Employee, Log in
-| Database         |  피자정보, 주문기록, 회원정보, 리뷰저장 및 정보 제공 | Manage Pizza, Add Pizza, Edit Pizza, Delete Pizza, View Order Records, Manage Employee, Add Employee, Edit Employee, Delete Employee, View Review
+| Administrator    |		시스템 접속후 관리자 권환획득  |	Log in(UC-1)
+| Administrator    |		피자정보 추가, 수정, 삭제     |	Manage Pizza(UC-10), Add Pizza(UC-2), Edit Pizza(UC-3), Delete Pizza(UC-4), Log in(UC-1)
+| Administrator    |		주문 기록 확인                |	View Order Records(UC-5), Log in(UC-1)
+| Administrator    |		리뷰확인                      |	View Review(UC-6), Log in(UC-1)
+| Administrator    |		직원정보 추가, 수정, 삭제	    | Manage Employee(UC-11), Add Employee(UC-7), Edit Employee(UC-8), Delete Employee(UC-9), Log in(UC-1)
+| Database         |  피자정보, 주문기록, 회원정보, 리뷰저장 및 정보 제공 | Manage Pizza(UC-10), Add Pizza(UC-2), Edit Pizza(UC-3), Delete Pizza(UC-4), View Order Records(UC-5), Manage Employee(UC-11), Add Employee(UC-7), Edit Employee(UC-8), Delete Employee(UC-9), View Review(UC-6)
 
 
 |  Req't   |  PW  | UC1  | UC2  | UC3  | UC4  | UC5  | UC6  | UC7  | UC8  | UC9  | UC10 | UC11 |
