@@ -38,7 +38,7 @@
 |Related Requirement: |FR1, FR2, FR3, FR4, FR5|
 |Initiating Actor:| Employee |
 |Actor's Goal:| - 종업원으로써 사용할 수 있는 기능을 사용하기 위하여, 자신이 종업원 임을 인증한다.|
-|Participating Actors: |X|
+|Participating Actors: |Database|
 |Preconditions: |- 회원 가입이 되어있어야한다.|
 ||- 종업원으로 등록 되어있어야 한다.|
 |Postconditions: |- 종업원을 주문 관리 페이지로 접속 시킨다.|
@@ -62,7 +62,7 @@
 | Related Requirement:                      | FR2                                                 |
 | Initiating Actor:                         | Employee                                            |
 | Actor's Goal:                             | - 주문을 관리하기 위하여 모든 주문 정보를 조회한다. |
-| Participating Actors:                     | X                                                   |
+| Participating Actors:                     | Database                                            |
 | Preconditions:                            | - 주문이 존재해야 한다.                             |
 | Postconditions:                           | X                                                   |
 | Flow of Events for Main Success Scenario: |                                                     |
@@ -76,7 +76,7 @@
 | Related Requirement:                      | FR3                                                |
 | Initiating Actor:                         | Employee                                           |
 | Actor's Goal:                             | - 배달에 필요한 주문자 정보를 조회한다.            |
-| Participating Actors:                     | Customer                                           |
+| Participating Actors:                     | Customer, Database                                 |
 | Preconditions:                            | - 고객이 회원 가입하여 주문자 정보를 등록해야한다. |
 |                                           | - 고객이 피자를 주문해야한다.                      |
 | Postconditions:                           | X                                                  |
@@ -92,7 +92,7 @@
 | Related Requirement:                      | FR4                                        |
 | Initiating Actor:                         | Employee                                   |
 | Actor's Goal:                             | - 주문 상세 정보를 조회한다.               |
-| Participating Actors:                     | X                                          |
+| Participating Actors:                     | Database                                   |
 | Preconditions:                            | - 주문이 존재해야 한다.                    |
 | Postconditions:                           | X                                          |
 | Flow of Events for Main Success Scenario: |                                            |
@@ -107,7 +107,7 @@
 | Related Requirement:                      | FR3                                        |
 | Initiating Actor:                         | Employee                                   |
 | Actor's Goal:                             | - 고객의 추가 요청 사항을 조회한다.        |
-| Participating Actors:                     | X                                          |
+| Participating Actors:                     | Database                                   |
 | Preconditions:                            | - 주문이 존재해야 한다.                    |
 |                                           | - 주문에 추가 요청 사항이 존재해야 한다.   |
 | Postconditions:                           | X                                          |
@@ -123,7 +123,7 @@
 | Related Requirement:                      | FR5                                                          |
 | Initiating Actor:                         | Employee                                                     |
 | Actor's Goal:                             | - 주문의 상태를 변경한다.                                    |
-| Participating Actors:                     | X                                                            |
+| Participating Actors:                     | Database                                                     |
 | Preconditions:                            | - 주문이 존재해야 한다.                                      |
 | Postconditions:                           | X                                                            |
 | Flow of Events for Main Success Scenario: |                                                              |
