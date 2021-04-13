@@ -14,6 +14,7 @@
 | 주문기록저장소	   |	주문기록 저장 및 정보 제공    | View Order Records(UC-5)
 | 회원정보저장소	   |	관리자 및 직원정보 저장 및 정보 제공    | Add Employee(UC-7), Edit Employee(UC-8), Delete Employee(UC-9)
 | 리뷰저장소	       |	리뷰 저장 및 정보 제공        | View Review(UC-6)
+| Customer         |      회원가입        | Sign up(UC-12)
 
 피자정보(사이즈, 사진, 이름, 설명, 가격)
 직원정보(이름, 전화번호, 월급, 권한)
@@ -34,19 +35,21 @@ UC-1 include UC-6
 | Administrator    |		리뷰확인                      |	View Review(UC-6), Log in(UC-1)
 | Administrator    |		직원정보 추가, 수정, 삭제	    | Manage Employee(UC-11), Add Employee(UC-7), Edit Employee(UC-8), Delete Employee(UC-9), Log in(UC-1)
 | Database         |  피자정보, 주문기록, 회원정보, 리뷰저장 및 정보 제공 | Manage Pizza(UC-10), Add Pizza(UC-2), Edit Pizza(UC-3), Delete Pizza(UC-4), View Order Records(UC-5), Manage Employee(UC-11), Add Employee(UC-7), Edit Employee(UC-8), Delete Employee(UC-9), View Review(UC-6)
+| Customer         |      회원가입        | Sign up(UC-12)
 
 
-|  Req't   |  PW  | UC1  | UC2  | UC3  | UC4  | UC5  | UC6  | UC7  | UC8  | UC9  | UC10 | UC11 |
-| :------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-|   REQ1   |  3   |  X   |      |      |      |      |      |      |      |      |      |      |
-|   REQ2   |  5   |  X   |  X   |      |      |      |      |      |      |      |  X   |      |
-|   REQ3   |  4   |  X   |      |  X   |  X   |      |      |      |      |      |  X   |      |
-|   REQ4   |  2   |  X   |      |      |      |  X   |      |      |      |      |      |      |
-|   REQ5   |  2   |  X   |      |      |      |      |  X   |      |      |      |      |      |
-|   REQ6   |  5   |  X   |      |      |      |      |      |  X   |  X   |  X   |      |  X   | 
-|   REQ7   |  1   |  X   |      |      |      |      |      |  X   |  X   |      |      |  X   |
-|  Max PW  |      |  5   |  5   |  4   |  4   |  2   |  2   |  5   |  5   |  5   |  5   |  5   |
-| Total PW |      |  24  |  5   |  4   |  4   |  2   |  2   |  8   |  8   |  5   |  9   |  8   |
+|  Req't   |  PW  | UC1  | UC2  | UC3  | UC4  | UC5  | UC6  | UC7  | UC8  | UC9  | UC10 | UC11 | UC12 |
+| :------: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+|   REQ1   |  3   |  X   |      |      |      |      |      |      |      |      |      |      ||
+|   REQ2   |  5   |  X   |  X   |      |      |      |      |      |      |      |  X   |      ||
+|   REQ3   |  4   |  X   |      |  X   |  X   |      |      |      |      |      |  X   |      ||
+|   REQ4   |  2   |  X   |      |      |      |  X   |      |      |      |      |      |      ||
+|   REQ5   |  2   |  X   |      |      |      |      |  X   |      |      |      |      |      ||
+|   REQ6   |  5   |  X   |      |      |      |      |      |  X   |  X   |  X   |      |  X   | |
+|   REQ7   |  1   |  X   |      |      |      |      |      |  X   |  X   |      |      |  X   ||
+|   REQ8   |  5   |      |      |      |      |      |      |      |      |      |      |      |   X  |      
+|  Max PW  |      |  5   |  5   |  4   |  4   |  2   |  2   |  5   |  5   |  5   |  5   |  5   |  5   |
+| Total PW |      |  24  |  5   |  4   |  4   |  2   |  2   |  8   |  8   |  5   |  9   |  8   |  5   |
 
 ---
 
@@ -281,3 +284,19 @@ UC-1 include UC-6
 |3a. Add버튼을 클릭하면 새로운 직원정보를 추가한다.  | : include Add Employee(UC-7)|
 |3b. Edit버튼을 클릭하면 기존의 직원정보를 수정한다. | : include Edit Employee(UC-8)|
 |3c. Delete버튼을 클릭하면 해당 직원정보를 삭제한다. | : include Delete Employee(UC-9)|
+
+| Use Case UC-12:                           |  Sign up                                       |
+| ----------------------------------------- | --------------------------------------------------- |
+| Related Requirement:                      | REQ8                                          |
+| Initiating Actor:                         | Customer                                    |
+| Actor's Goal:                             | - 고객은 회원가입을 할 수 있다.            |
+| Participating Actors:                     | Database                                            |
+| Preconditions:                            | - 고객이 시스템에 접속된 상태이다.                |
+|                                           | - 피자메뉴페이지에서 회원가입버튼을 보고있다.       |
+| Postconditions:                           | - 회원가입이 완료되서 데이터베이스에 등록된 상태이다. |
+| Flow of Events for Main Success Scenario: |                                                     |
+| →                                         | 1. 회원가입 버튼을 누른다.       |
+| ←                                         | 2. System은 회원가입페이지를 고객에게 보여준다. |
+| →                                         | 3. 고객은 회원정보를 입력한다. (주문시 위치의 기본설정값, 전화번호, 이름, 아이디, 비밀번호) |
+| ←                                         | 4. System은 고객에게 고객권한(주문가능, 주문 시 리뷰작성가능)을 부여한다. |
+| ←                                         | 4. System은 데이터베이스에 고객정보를 저장한다. |
