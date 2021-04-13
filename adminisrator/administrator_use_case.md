@@ -43,9 +43,8 @@ UC-1 include UC-6
 |   REQ3   |  4   |  X   |      |  X   |  X   |      |      |      |      |      |  X   |      |
 |   REQ4   |  2   |  X   |      |      |      |  X   |      |      |      |      |      |      |
 |   REQ5   |  2   |  X   |      |      |      |      |  X   |      |      |      |      |      |
-|   REQ6   |  2   |  X   |      |      |      |      |      |  X   |  X   |      |      |  X   |
-|   REQ7   |  5   |  X   |      |      |      |      |      |  X   |  X   |  X   |      |  X   | 
-|   REQ8   |  1   |  X   |      |      |      |      |      |  X   |  X   |      |      |  X   |
+|   REQ6   |  5   |  X   |      |      |      |      |      |  X   |  X   |  X   |      |  X   | 
+|   REQ7   |  1   |  X   |      |      |      |      |      |  X   |  X   |      |      |  X   |
 |  Max PW  |      |  5   |  5   |  4   |  4   |  2   |  2   |  5   |  5   |  5   |  5   |  5   |
 | Total PW |      |  24  |  5   |  4   |  4   |  2   |  2   |  8   |  8   |  5   |  9   |  8   |
 
@@ -53,7 +52,7 @@ UC-1 include UC-6
 
 | Use Case UC-1:                            |  Log in                                             |
 | ----------------------------------------- | --------------------------------------------------- |
-| Related Requirement:                      | REQ1,REQ2,REQ3,REQ4,REQ5,REQ6,REQ7,REQ8             |
+| Related Requirement:                      | REQ1,REQ2,REQ3,REQ4,REQ5,REQ6,REQ7             |
 | Initiating Actor:                         | Administrator                                       |
 | Actor's Goal:                             | - 시스템을 관리하기 위해, 시스템에 관리자 권한으로 접속한다.         |
 | Participating Actors:                     | Database                                            |
@@ -173,7 +172,7 @@ UC-1 include UC-6
 
 | Use Case UC-7:                            |  Add Employee                                       |
 | ----------------------------------------- | --------------------------------------------------- |
-| Related Requirement:                      | REQ6,REQ7,REQ8                                           |
+| Related Requirement:                      | REQ6,REQ7                                           |
 | Initiating Actor:                         | Administrator                                       |
 | Actor's Goal:                             | - 새로운 직원에 대한 정보를 추가한다.                |
 | Participating Actors:                     | Database                                            |
@@ -201,7 +200,7 @@ UC-1 include UC-6
 
 | Use Case UC-8:                            |  Edit Employee                                       |
 | ----------------------------------------- | --------------------------------------------------- |
-| Related Requirement:                      | REQ6,REQ7,REQ8                                                |
+| Related Requirement:                      | REQ6,REQ7                                              |
 | Initiating Actor:                         | Administrator                                       |
 | Actor's Goal:                             | - 직원에 대한 정보를 수정한다.                |
 | Participating Actors:                     | Database                                            |
@@ -266,7 +265,7 @@ UC-1 include UC-6
 
 | Use Case UC-11:                           |  Manage Employee                                       |
 | ----------------------------------------- | --------------------------------------------------- |
-| Related Requirement:                      | REQ6, REQ7, REQ8                                          |
+| Related Requirement:                      | REQ6, REQ7                                          |
 | Initiating Actor:                         | Administrator                                       |
 | Actor's Goal:                             | - 직원정보를 추가, 수정, 삭제할 수 있다.             |
 | Participating Actors:                     | Database                                            |
