@@ -15,9 +15,12 @@
 | 회원정보저장소	   |	관리자 및 직원정보 저장 및 정보 제공    | Add Employee(UC-7), Edit Employee(UC-8), Delete Employee(UC-9)
 | 리뷰저장소	       |	리뷰 저장 및 정보 제공        | View Review(UC-6)
 | Customer         |      회원가입        | Sign up(UC-12)
+| Administrator     |  
+| Customer          |  고객에서 직원으로 변경시 직원권한 획득 | ChangeAuthority( UC-13)  |
 
 피자정보(사이즈, 사진, 이름, 설명, 가격)
-직원정보(이름, 전화번호, 월급, 권한)
+직원정보(이름, 전화번호, 월급, ID, 비밀번호, 직원권한)
+고객정보(이름, 전화번호, 주소, ID, 비밀번호, 고객권한)
 
 #### Generalizations
 - Add Pizza, Edit Pizza, Delete Pizza → Manage Pizza(UC-10)
@@ -299,4 +302,4 @@ UC-1 include UC-6
 | ←                                         | 2. System은 회원가입페이지를 고객에게 보여준다. |
 | →                                         | 3. 고객은 회원정보를 입력한다. (주문시 위치의 기본설정값, 전화번호, 이름, 아이디, 비밀번호) |
 | ←                                         | 4. System은 고객에게 고객권한(주문가능, 주문 시 리뷰작성가능)을 부여한다. |
-| ←                                         | 4. System은 데이터베이스에 고객정보를 저장한다. |
+| ←                                         | 5. System은 데이터베이스에 고객정보를 저장한다. |
