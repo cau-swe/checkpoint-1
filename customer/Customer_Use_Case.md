@@ -42,7 +42,7 @@
 | Related Requirement:                      | FR2,FR3,FR4,FR5,FR6,FR9,FR10,FR11                                               |
 | Initiating Actor:                         | 고객                                            |
 | Actor's Goal:                             | 고객은 피자집에서 제공하는 모든 피자 메뉴에 대한 정보를 볼 수 있어야 한다. |
-| Participating Actors:                     | X                                                   |
+| Participating Actors:                     | 데이터베이스                                                   |
 | Preconditions:                            | 서비스에 접속을 해야한다.                         |
 | Postconditions:                           | X                                                   |
 | Flow of Events for Main Success Scenario: |                                                     |
@@ -55,7 +55,7 @@
 | Related Requirement:                      | FR5, FR6                                                |
 | Initiating Actor:                         | 고객                                            |
 | Actor's Goal:                             | 장바구니를 보고 선택한 피자 목록을 보고 수정할 수 있어야 한다.  |
-| Participating Actors:                     | X                                                   |
+| Participating Actors:                     | 데이터베이스                                                   |
 | Preconditions:                            | 원하는 피자를 선택 했어야 한다.                           |
 | Postconditions:                           | X                                                   |
 | Flow of Events for Main Success Scenario: |                                                     |
@@ -102,11 +102,13 @@
 | Initiating Actor:                         | 고객                                            |
 | Actor's Goal:                             | 주문한 피자에 대해 리뷰를 남길 수 있어야 한다.|
 | Participating Actors:                     | X                                                   |
-| Preconditions:                            | 리뷰를 남길 피자의 결제를 완료해야 한다.
+| Preconditions:                            | 고객은 리뷰남길 피자를 반드시 선 결제했어야 한다. |
 | Postconditions:                           | X                                                   |
 | Flow of Events for Main Success Scenario: |                                                     |
-| ←                                         | 1.시스템이 사용자가 주문했던 피자가 무엇인지 보여주고, 리뷰를 남길 수 있는 권한을 준다. |
-| →                                         | 2.고객이 리뷰를 남긴다.          |
+| →                                         | 1.고객은 피자를 먼저 주문한다. |
+| →                                         | 2.고객은 주문현황 페이지에 들어온다. |
+| ←                                         | 3.시스템이 사용자가 주문했던 피자가 무엇인지 보여주고, 리뷰를 남길 수 있는 권한을 준다. |
+| →                                         | 4.고객이 리뷰를 남긴다.          |
 
 ---
 | Use Case UC-6:                            | 리뷰 보기                                      |
@@ -127,7 +129,7 @@
 | Related Requirement:                      | FR2,FR8,FR9,FR10,FR11                                |
 | Initiating Actor:                         | 고객                                            |
 | Actor's Goal:                             | 사용자는 픽업할 것인지 배달할 것인지 선택할 수 있어야 한다.  |
-| Participating Actors:                     | 지도                                               |
+| Participating Actors:                     | X                                               |
 | Preconditions:                            | X                                               |
 | Postconditions:                           | X                                                   |
 | Flow of Events for Main Success Scenario: |                                                     |
