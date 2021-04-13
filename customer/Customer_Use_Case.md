@@ -71,12 +71,13 @@
 | Initiating Actor:                         | 고객                                            |
 | Actor's Goal:                             | 원하는 피자를 주문할 수 있어야 한다   |
 | Participating Actors:                     | X                                                   |
-| Preconditions:                            | 1.	피자를 선택 했어야 한다. 2.	결제를 해야한다.수령 방법을 입력해야 한다.                   |
+| Preconditions:                            | 1. 로그인 상태어야 한다              |
 | Postconditions:                           | 1.	주문 정보가 업데이트 되어 확인할 수 있어야 한다. 리뷰를 남길 수 있어야 한다.|
 | Flow of Events for Main Success Scenario: |                                                     |
-| →                                         | 1.	선택한 피자에대해 수령방법을 입력한뒤 결제완료를 해야한다.                 |
-| →                                         | 2. 고객이 추가 주문요청 사항을 입력한다.           |
-| ←                                         | 3. 시스템이 주문을 완료하고 완료되었음을 보여준다.|
+| →                                         | 1. 고객은 로그인을 해야한다.    |
+| →                                         | 2. 선택한 피자에대해 수령방법을 입력한뒤 결제완료를 해야한다. (include UC-7)                |
+| →                                         | 3. 고객이 추가 주문요청 사항을 입력한다.           |
+| ←                                         | 4. 시스템이 주문을 완료하고 완료되었음을 보여준다.|
 
 
 ---
@@ -102,10 +103,10 @@
 | Initiating Actor:                         | 고객                                            |
 | Actor's Goal:                             | 주문한 피자에 대해 리뷰를 남길 수 있어야 한다.|
 | Participating Actors:                     | X                                                   |
-| Preconditions:                            | 고객은 리뷰남길 피자를 반드시 선 결제했어야 한다. |
+| Preconditions:                            | 1.로그인상태이어야 한다. 2.고객은 리뷰남길 피자를 반드시 선 결제했어야 한다. |
 | Postconditions:                           | X                                                   |
 | Flow of Events for Main Success Scenario: |                                                     |
-| →                                         | 1.고객은 피자를 먼저 주문한다. |
+| →                                         | 1.고객은 로그인된 상태에서 피자를 먼저 주문한다. |
 | →                                         | 2.고객은 주문현황 페이지에 들어온다. |
 | ←                                         | 3.시스템이 사용자가 주문했던 피자가 무엇인지 보여주고, 리뷰를 남길 수 있는 권한을 준다. |
 | →                                         | 4.고객이 리뷰를 남긴다.          |
@@ -133,10 +134,11 @@
 | Preconditions:                            | X                                               |
 | Postconditions:                           | X                                                   |
 | Flow of Events for Main Success Scenario: |                                                     |
-| →                                         | 1. 고객은 피자를 배달로 수령함을 선택한다.          |
-| →                                         | 2. 배달주소를 입력한다.            |
+| →                                         | 1. 시스템은 고객에게 배달과 픽업 수령중에 선택하는 화면을 보여준다.          |
+| →                                         | 2. 고객은 피자를 배달로 수령함을 선택한다.          |
+| →                                         | 3. 배달주소를 입력한다.            |
 | Flow of Events for Extensions (Alternative Scenario) |                                                     |
-| 3.a 고객이 픽업을 원한다면:                  |                                                     |
+| 3.b 고객이 픽업을 원한다면:                  |                                                     |
 | ←                                         | 1.	고객에게 픽업장소에 대한 정보를 지도를 통해 제공한다.         |
 
 ---
