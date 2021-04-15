@@ -25,3 +25,5 @@ updated page, input page, warning 을 새로 그리지 않고 바로 controller 
 ## UC 6 - view reviews
 ![image](https://user-images.githubusercontent.com/37579661/114933955-4373f580-9e74-11eb-8268-514ffc1d48a3.png)
 
+## UC 7 - add employee
+![image](https://user-images.githubusercontent.com/37579661/114934045-5be41000-9e74-11eb-9383-71049c604148.png)
