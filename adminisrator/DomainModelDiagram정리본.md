@@ -27,3 +27,9 @@ updated page, input page, warning 을 새로 그리지 않고 바로 controller 
 
 ## UC 7 - add employee
 ![image](https://user-images.githubusercontent.com/37579661/114934045-5be41000-9e74-11eb-9383-71049c604148.png)
+
+## UC 8 - edit employee
+![image](https://user-images.githubusercontent.com/37579661/114934128-79b17500-9e74-11eb-94de-67f25a1cdc56.png)
+
+#3 UC 9 - delete employee
+![image](https://user-images.githubusercontent.com/37579661/114934165-86ce6400-9e74-11eb-9b9e-923c61758dd5.png)
