@@ -17,3 +17,7 @@ updated page, input page, warning 을 새로 그리지 않고 바로 controller 
 
 ## UC4 - delete pizza
 ![image](https://user-images.githubusercontent.com/37579661/114933765-03ad0e00-9e74-11eb-9e63-22e2e50ac4c2.png)
+
+
+## UC 5 - view order records 
+![image](https://user-images.githubusercontent.com/37579661/114933849-22130980-9e74-11eb-9b5e-788f349b6eb3.png)
