@@ -14,3 +14,6 @@
 updated page, input page, warning 을 새로 그리지 않고 바로 controller 에 post 되는 식으로 바꾸어보았습니다. 
 
 ![image](https://user-images.githubusercontent.com/37579661/114933382-913c2e00-9e73-11eb-8d72-3c9ba99a46c7.png)
+
+## UC4 - delete pizza
+![image](https://user-images.githubusercontent.com/37579661/114933765-03ad0e00-9e74-11eb-9e63-22e2e50ac4c2.png)
