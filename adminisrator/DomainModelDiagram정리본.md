@@ -21,3 +21,7 @@ updated page, input page, warning 을 새로 그리지 않고 바로 controller 
 
 ## UC 5 - view order records 
 ![image](https://user-images.githubusercontent.com/37579661/114933849-22130980-9e74-11eb-9b5e-788f349b6eb3.png)
+
+## UC 6 - view reviews
+![image](https://user-images.githubusercontent.com/37579661/114933955-4373f580-9e74-11eb-8268-514ffc1d48a3.png)
+
