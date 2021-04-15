@@ -9,3 +9,8 @@
 
 ## UC3 - edit pizza
 ![image](https://user-images.githubusercontent.com/37579661/114932987-20951180-9e73-11eb-83ef-5db0a1d1a11b.png)
+
+처음에 잘못 그렸던 버전입니다! 
+updated page, input page, warning 을 새로 그리지 않고 바로 controller 에 post 되는 식으로 바꾸어보았습니다. 
+
+![image](https://user-images.githubusercontent.com/37579661/114933382-913c2e00-9e73-11eb-8d72-3c9ba99a46c7.png)
