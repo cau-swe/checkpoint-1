@@ -40,12 +40,12 @@
 | 리뷰저장소	       |	리뷰 저장 및 정보 제공        | View Review(UC-6)
 | 고객정보저장소    |  고객 정보 저장 및 정보 제공   | View Customer Information  (UC-17)
 | Customer         |      회원가입        | Sign up(UC-12)
-| Administrator     |  관리자계정설정     | Set Admin Account(UC-13)
-| Administrator     |  직원계정설정       | Set Employee Account(UC-14)
-| Administrator     |  피자정보보기       | View Pizza Information (UC-15)
-| Administrator     |  직원정보보기       | View Employee Information (UC-16)
-| Administrator     |  고객정보보기       | View Customer Information (UC-17)
-| Administrator     |  계정정보 보기      | View Account(UC-18)
+| Administrator     |  관리자계정설정     | Set Admin Account(UC-13),Log in(UC-1)
+| Administrator     |  직원계정설정       | Set Employee Account(UC-14),Log in(UC-1)
+| Administrator     |  피자정보보기       | View Pizza Information (UC-15),Log in(UC-1)
+| Administrator     |  직원정보보기       | View Employee Information (UC-16),Log in(UC-1)
+| Administrator     |  고객정보보기       | View Customer Information (UC-17),Log in(UC-1)
+| Administrator     |  계정정보 보기      | View Account(UC-18),Log in(UC-1)
 | Administrator     |  로그아웃           | Log out (UC-19)
 
 피자정보(사진, 이름, 설명, 가격)
@@ -80,20 +80,20 @@
 |  Req't  |  PW  | UC1  | UC2  | UC3  | UC4  | UC5  | UC6  | UC7  | UC8  | UC9  | UC10 | UC11 | UC12 | UC13 | UC14 | UC15 | UC16 | UC17 | UC18 | UC19 |
 |:-------:| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 |   FR1   |  3   |  X   |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |  X   |
-|   FR2   |  5   |  X   |  X   |      |      |      |      |      |      |      |  X   |      |      |      |      |  X   |      |      |      |  X   |
-|   FR3   |  4   |  X   |      |  X   |  X   |      |      |      |      |      |  X   |      |      |      |      |  X   |      |      |      |  X   |
-|   FR4   |  2   |  X   |      |      |      |  X   |      |      |      |      |      |      |      |      |      |      |      |      |      |  X   |
-|   FR5   |  2   |  X   |      |      |      |      |  X   |      |      |      |      |      |      |      |      |      |      |      |      |  X   |
-|   FR6   |  5   |  X   |      |      |      |      |      |  X   |  X   |  X   |      |  X   |      |      |      |      |  X   |      |      |  X   |
-|   FR7   |  1   |  X   |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |  X   |      |  X   |
+|   FR2   |  5   |  X   |  X   |      |      |      |      |      |      |      |  X   |      |      |      |      |  X   |      |      |      |      |
+|   FR3   |  4   |  X   |      |  X   |  X   |      |      |      |      |      |  X   |      |      |      |      |  X   |      |      |      |      |
+|   FR4   |  2   |  X   |      |      |      |  X   |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+|   FR5   |  2   |  X   |      |      |      |      |  X   |      |      |      |      |      |      |      |      |      |      |      |      |      |
+|   FR6   |  5   |  X   |      |      |      |      |      |  X   |  X   |  X   |      |  X   |      |      |      |      |  X   |      |      |      |
+|   FR7   |  1   |  X   |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |  X   |      |      |
 |   FR8   |  5   |      |      |      |      |      |      |      |      |      |      |      |  X   |      |      |      |      |      |      |      |
-|   FR9   |  3   |  X   |      |      |      |      |      |      |      |      |      |      |      |  X   |  X   |      |      |      |  X   |  X   |
-|   NFR1  |  3   |  X   |  X   |  X   |  X   |      |      |      |      |      |  X   |      |      |      |      |      |      |      |      |  X   |
-|   NFR2  |  3   |  X   |      |      |      |      |      |  X   |  X   |  X   |      |  X   |      |      |      |      |      |      |      |  X   |
-|   NFR3  |  3   |  X   |      |      |      |      |      |      |      |      |      |      |      |  X   |  X   |      |      |      |  X   |  X   |
-|   NFR4  |  3   |  X   |      |      |      |      |      |      |      |      |      |      |  X   |      |      |      |      |      |      |  X   |
-|  Max PW |      |  5   |  5   |  4   |  4   |  2   |  2   |  5   |  5   |  5   |  5   |  5   |  5   |  3   |  3   |  5   |  5   |  1   |  3   |  5   |
-| Total PW|      |  37  |  8   |  7   |  7   |  2   |  2   |  8   |  8   |  8   |  12  |  8   |  5   |  6   |  6   |  9   |  5   |  1   |  3   |  37  |
+|   FR9   |  3   |  X   |      |      |      |      |      |      |      |      |      |      |      |  X   |  X   |      |      |      |  X   |      |
+|   NFR1  |  3   |  X   |  X   |  X   |  X   |      |      |      |      |      |  X   |      |      |      |      |      |      |      |      |      |
+|   NFR2  |  3   |  X   |      |      |      |      |      |  X   |  X   |  X   |      |  X   |      |      |      |      |      |      |      |      |
+|   NFR3  |  3   |  X   |      |      |      |      |      |      |      |      |      |      |      |  X   |  X   |      |      |      |  X   |      |
+|   NFR4  |  3   |  X   |      |      |      |      |      |      |      |      |      |      |  X   |      |      |      |      |      |      |      |
+|  Max PW |      |  5   |  5   |  4   |  4   |  2   |  2   |  5   |  5   |  5   |  5   |  5   |  5   |  3   |  3   |  5   |  5   |  1   |  3   |  3   |
+| Total PW|      |  37  |  8   |  7   |  7   |  2   |  2   |  8   |  8   |  8   |  12  |  8   |  5   |  6   |  6   |  9   |  5   |  1   |  3   |  3   |
 
 ---
 
@@ -444,7 +444,7 @@
 
 | Use Case UC-19:                           |  Log out                                       |
 | ----------------------------------------- | --------------------------------------------------- |
-| Related Requirement:                      | FR1,FR2,FR3,FR4,FR5,FR6,FR7,FR9,NFR1,NFR2,NFR3,NFR4 |
+| Related Requirement:                      | FR1                                              |
 | Initiating Actor:                         | Administrator                                    |
 | Actor's Goal:                             | - 관리자는 프로그램을 마치고 로그아웃을 할 수 있다.  |
 | Participating Actors:                     | Database                                            |
