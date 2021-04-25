@@ -49,11 +49,14 @@
 
 </br>
 
- <h2 align="center">  👱 Use Cases & Domain Model 
+ <h2 align="center">  👱 Use Cases & Domain Model  </h2>   
 
+ <h4 align="center"> 
+ 
 | |Customer|Employee|Administrator|
 |:--:|:--:|:--:|:--:|
 |Use Case|[Customer Use Case]()|[Employee Use Case]()|[Administrator Use Case]()|
 |Domain Model|[Customer Domain Model]()|[Employee Domain Model]()|[Administrator Domain Model]()|
 
- </h2>   
+ </h4> 
+
