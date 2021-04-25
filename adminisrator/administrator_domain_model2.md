@@ -41,8 +41,11 @@
 | ------------- | ----------------- | --------------------------------------- |
 | StoreRequest  | input parameters  | 사이즈, 사진, 이름, 설명, 가격          |
 | PageMaker     | input parameters  | UpdatedPage를 만들때 필요하다.          |
-
-
+  
+  
+### Diagram   
+![image](https://user-images.githubusercontent.com/37579661/115994956-2bd70280-a614-11eb-9470-a8db8d78e78a.png)
+  
 
 ## UC-3 Edit Pizza
 ### Extracting the Responsibility
@@ -90,7 +93,11 @@
 | StoreRequest  | input parameters  | 사이즈, 사진, 이름, 설명, 가격          |
 | PageMaker     | input parameters  | UpdatedPage를 만들때 필요하다.          |
 
+  
+### Diagram    
+![image](https://user-images.githubusercontent.com/37579661/115994971-3ee9d280-a614-11eb-843e-a5ae68b8e9f8.png)
 
+  
 
 ## UC-4 Delete Pizza
 ### Extracting the Responsibility
@@ -126,6 +133,9 @@
 | ------------- | ----------------- | --------------------------------------- |
 | DeleteRequest | delete parameters | 어떤 피자를 삭제할 지에 대한 정보, 여러 개의 pizzaID |
 | PageMaker     | delete parameters | UpdatedPage를 만들때 필요하다.          |
+  
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115994987-4e691b80-a614-11eb-92e9-4f5ca366d97b.png)
 
 
 ## UC-5 View Order Records
@@ -154,8 +164,11 @@
 
 | Concept       | Attributes        | Attribute Description                   |
 | ------------- | ----------------- | --------------------------------------- |
-
-
+  
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115994997-604abe80-a614-11eb-8d07-9af9037ef243.png)
+  
+  
 ## UC-6 View Reviews
 ### Extracting the Responsibility
 
@@ -187,7 +200,11 @@
 | Concept       | Attributes        | Attribute Description                   |
 | ------------- | ----------------- | --------------------------------------- |
 | SelectRequest | pizzaID           | 어떤 피자를 선택했는지                  |
+  
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995004-6c368080-a614-11eb-9f32-4c30d58d75df.png)
 
+  
 
 ## UC-7 Add Employee
 ### Extracting the Responsibility
@@ -233,7 +250,11 @@
 | StoreRequest  | input parameters  | 이름, 전화번호, 월급, 권한              |
 | PageMaker     | input parameters  | UpdatedPage를 만들때 필요하다.          |
 
+  
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995016-7b1d3300-a614-11eb-8527-5a7296280495.png)
 
+  
 
 ## UC-8 Edit Employee
 ### Extracting the Responsibility
@@ -280,6 +301,10 @@
 | EditRequest   | Employee ID       | 어떤 Employee를 수정할 지에 대한 정보        |
 | StoreRequest  | input parameters  | 이름, 전화번호, 월급, 권한          |
 | PageMaker     | input parameters  | UpdatedPage를 만들때 필요하다.          |
+  
+### Diagram
+![image](https://user-images.githubusercontent.com/37579661/115995031-88d2b880-a614-11eb-9aa7-144eaea94a8a.png)
+  
 
 ## UC-9 Delete Employee
 ### Extracting the Responsibility
@@ -315,6 +340,10 @@
 | ------------- | ----------------- | --------------------------------------- |
 | DeleteRequest | delete parameters | 어떤 Employee를 삭제할 지에 대한 정보, 여러 개의 Employee ID |
 | PageMaker     | delete parameters | UpdatedPage를 만들때 필요하다.          |
+  
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995043-9c7e1f00-a614-11eb-8a42-f1ccf4d2575e.png)
+  
 
 
 ## UC-12 Sign up
