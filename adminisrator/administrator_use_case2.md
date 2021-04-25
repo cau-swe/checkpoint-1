@@ -466,7 +466,5 @@
 | Postconditions:                           | - x         |
 | Flow of Events for Main Success Scenario: |                                                     |
 | →                                         | 1. 관리자는 Log out 버튼을 클릭한다.         |
-| ←                                         | 2. System은 프로그램 종료할 것인지 관리자에게 다시한번 확인을 한다. |
-| →                                         | 3. 관리자는 확인 버튼을 누른다.
-| ←                                         | 4. System은 프로그램을 종료한다. 
+| ←                                         | 2. System은 Log in 페이지를 보여준다.        |
 
