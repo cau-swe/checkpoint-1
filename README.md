@@ -64,10 +64,11 @@
 
 </br>
 
- <h2 align="center">  🚂 팀 별 역할  </h2>  
- > 팀 별 UI 와 Domain 역할을 팀별로 분할하는 식으로 결정하였습니다.    
- > UI 는 Customer, Employee, Administrator 의 화면들로 나누었습니다.  
- > Domain 은 Menu, order, account 로 나누었습니다.  
+ <h2 align="center">  🚂 팀 별 역할  </h2>   
+ 
+ >팀 별 UI 와 Domain 역할을 팀별로 분할하는 식으로 결정하였습니다.    
+ >UI 는 Customer, Employee, Administrator 의 화면들로 나누었습니다.  
+ >Domain 은 Menu, order, account 로 나누었습니다.  
      
  | |CUSTOMER-MENU 팀 | EMPLOYEE-ORDER 팀 |ADMINISTRATOR-ACCOUNT 팀|
  |:--:|:--:|:--:|:--:|
