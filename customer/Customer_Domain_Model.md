@@ -186,75 +186,9 @@
 
 ![Domain Model(UC6)](./DomainModel(UC6).png)
 
----
-## UC-7 수령방법 입력
-### Extracting the Responsibility
-
-| Responsibility Description                                   | Type | Concept Name        |
-| ------------------------------------------------------------ | :--: | ------------------- |
-| Use Case와 관련된 모든 컨셉들의 행동을 관리하고, 적절한 컨셉에게 위임한다. |  D   | Controller          |
-| 사용자가 입력한 수령방법과 주소에 대한 저장 요청                 |  K   | Receive Request  |
-| 수령방법 페이지를 보여주기 위한 HTML 문서                     |  K   | Select Page|
-| 디스플레이하기 위한 HTML 문서를 생성한다.          |  D   | Page Maker           |
-| 요청을 통해 받은 주소에 대하여 지도 검색    |  D   | Map Api  |
-
-### Extracting the Associations
-
-| Concept Pair                     | Association Description                                      | Association Name |
-| -------------------------------- | ------------------------------------------------------------ | ---------------- |
-| Receive Request ↔ Controller       | Controller는 조회에 필요한 조건들을 전달받는다.                | receives         |
-| Controller ↔ Map Api  | Controller는 요청을 통해 받은 주소를 통해 Map API에게 지도 검색를 요청을 하고 받는다. | conveys request  |
-| Controller ↔ Select Page | Controller는 결제하기 위한 Payment Page를 고객에게 전달한다.        | posts            |
-| Controller ↔ Page Maker           | Controller는 컨트롤러는 페이지 생성에 필요한 데이터(지도)를 전달한다          | conveys request  |
-| Page Maker ↔ Select Page  | Page Maker는 수령방법 페이지를 만들고 입력받은 주소에 대한 지도를 반영한다.       | prepares         |
-
-
-### Extracting the Attributes
-
-| Concept       | Attributes        | Attribute Description                                        |
-| ------------- | ----------------- | ------------------------------------------------------------ |
-| Receive Request | Customer ID , Recevie Param | 주문한 고객 ID와 수령 정보에 대한 매개변수를 |
-
-![Domain Model(UC7)](./DomainModel(UC7).jpg)
----
-## UC-8 결제하기
-### Extracting the Responsibility
-
-| Responsibility Description                                   | Type | Concept Name        |
-| ------------------------------------------------------------ | :--: | ------------------- |
-| Use Case와 관련된 모든 컨셉들의 행동을 관리하고, 적절한 컨셉에게 위임한다. |  D   | Controller          |
-| 결제하려는 피자들의 ID를 전달한다.                    |  K   | Search Request       |
-| 주문한 피자들을 결제하기 위한 HTML 문서                              |  K   | Payment Page |
-| 디스플레이하기 위한 HTML 문서를 생성한다.                                        |  D   | Page Maker           |
-| 데이터베이스 질의를 통해 해당 피자에 대한 가격 정보를 반환한다.    |  D   | Database Connection  |
-| 주문하려는 피자들의 총 가격을 계산한다.    |  D   | Calculator  |
-
-
-### Extracting the Associations
-
-| Concept Pair                     | Association Description                                      | Association Name |
-| -------------------------------- | ------------------------------------------------------------ | ---------------- |
-| Search Request ↔ Controller       | Controller는 조회에 필요한 조건들을 전달받는다.                | receives         |
-| Controller ↔ Database Connection  | Controller는 Database Connection에게 조건에 해당하는 데이터 조회를 요청한다. | conveys request  |
-| Controller ↔ Payment Page | Controller는 결제하기 위한 Payment Page를 고객에게 전달한다.        | posts            |
-| Controller ↔ Page Maker           | Controller는 페이지 생성에 필요한 데이터를 전달한다.           | conveys request  |
-| Page Maker ↔ Payment Page  | Page Maker는 피자를 결제하기 위한 페이지를 만든다.      | prepares         |
-| Database Connection ↔ Page Maker   | PageMaker는 Database Connection로부터 주문 상세 정보와 주문 상태를 전달받는다. | provides data    |
-| Calculator ↔ Database Connection  | Calculator는 Database Connection에게 가격을 계산하고 전달해준다. | calculates data  |
-
-
-
-### Extracting the Attributes
-
-| Concept       | Attributes        | Attribute Description                                        |
-| ------------- | ----------------- | ------------------------------------------------------------ |
-| SearchRequest | Pizza ID | 해당 피자 이름(ID)을 가지고 있다. |
-| Calculator | Pizza Price |  해당 피자의 가격 정보를 가지고 있다.   |
-
-![Domain Model(UC8)](./DomainModel(UC8).png)
 
 ---
-## UC-9 로그인
+## UC-7 로그인
 ### Extracting the Responsibility
 
 
