@@ -349,7 +349,11 @@
 |3a. 고객이 어떤 정보를 입력하지 않은 경우   |
 | ←                                         | 1. (a)System은 공란을 확인한다. (b) Customer에게 공란이 있다고 알려준다.|
 | →                                         | 2. Customer는 누락된 정보를 다시 입력한다.|
-| ←                                         | 3. System은 입력된 ID와 비밀번호를 데이터베이스에 저장한다.  |
+| ←                                         | 3. 위 4,5 과정과 같다.  |
+|3b. 고객이 다른 고객,관리자, 직원의 ID와 중복되는 ID를 입력하는 경우   |
+| ←                                         | 1. (a)System은 중복을 체크한다. (b) Customer에게 사용할 수 없는 ID라고 알려준다. |
+| →                                         | 2. Customer는 ID를 다시 입력한다.|
+| ←                                         | 3. 위 4,5 과정과 같다.  |
 
 
 | Use Case UC-13:                           |  Set Admin Account                                       |
@@ -361,13 +365,17 @@
 | Preconditions:                            | - 관리자는 로그인을 하고 계정설정페이지에 접속된 상태이다.                |
 | Postconditions:                           | - 관리자 계정 설정이 완료된 상태이다.         |
 | Flow of Events for Main Success Scenario: |                                                     |
-| ←                                         | 1. System은 이전 관리자 ID와 비밀번호를 입력칸에 보여준다.        |
-| →                                         | 2. 관리자는 바꾸고 싶은 ID와 비밀번호를 입력한 후, Check버튼을 클릭한다.         |
-| ←                                         | 3. System은 입력된 ID와 비밀번호를 데이터베이스에 저장한다. |
+| →                                         | 1. 관리자는 바꾸고 싶은 ID와 비밀번호를 입력한 후, Check버튼을 클릭한다.         |
+| ←                                         | 2. System은 입력된 ID와 비밀번호를 데이터베이스에 저장한다. |
 |Flow of Events for Extensions (Alternate Scenarios): ||
+|1a. 관리자가 어떤 정보를 입력하지 않은 경우   |
 | ←                                         | 1. (a)System은 공란을 확인한다. (b) administrator에게 공란이 있다고 알려준다.|
 | →                                         | 2. Administrator는 누락된 정보를 다시 입력한다.|
-| ←                                         | 3. System은 입력된 ID와 비밀번호를 데이터베이스에 저장한다.  |
+| ←                                         | 3. 위 2과정과 같다.  |
+|1b. 관리자가 직원, 고객의 ID와 중복되는 ID를 입력하는 경우   |
+| ←                                         | 1. (a)System은 중복을 체크한다. (b) 관리자에게 사용할 수 없는 ID라고 알려준다. |
+| →                                         | 2. 관리자는 ID를 다시 입력한다.|
+| ←                                         | 3. 위 2 과정과 같다.  |
 
 
 | Use Case UC-14:                           |  Set Employee Account                                       |
@@ -385,7 +393,11 @@
 |1a. Administrator가 어떤 정보를 누락했을 경우||
 | ←                                         | 1. (a)System은 공란을 확인한다. (b) administrator에게 공란이 있다고 알려준다.|
 | →                                         | 2. Administrator는 누락된 정보를 다시 입력한다.|
-| ←                                         | 3. System은 입력된 ID와 비밀번호를 데이터베이스에 저장한다.  |
+| ←                                         | 3. 위 2과정과 같다.  |
+|1b. 관리자가 관리자, 고객의 ID와 중복되는 ID를 입력하는 경우   |
+| ←                                         | 1. (a)System은 중복을 체크한다. (b) 관리자에게 사용할 수 없는 ID라고 알려준다. |
+| →                                         | 2. 관리자는 ID를 다시 입력한다.|
+| ←                                         | 3. 위 3 과정과 같다.  |
 
 
 | Use Case UC-15:                           |  View Pizza Information                                       |
