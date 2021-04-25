@@ -57,8 +57,8 @@
  
 | |Customer|Employee|Administrator|
 |:--:|:--:|:--:|:--:|
-|Use Case|[Customer Use Case]()|[Employee Use Case]()|[Administrator Use Case]()|
-|Domain Model|[Customer Domain Model]()|[Employee Domain Model]()|[Administrator Domain Model]()|
+|Use Case|[Customer Use Case](./customer/Customer_Use_Case.md)|[Employee Use Case](./employee/employee-use-case.md)|[Administrator Use Case](./administrator/administrator_use_case2.md)|
+|Domain Model|[Customer Domain Model](./customer/Customer_Domain_Model.md)|[Employee Domain Model](./employee/employee-domain-model.md)|[Administrator Domain Model](./administrator/administrator_domain_model2.md)|
 
  </h4> 
 
