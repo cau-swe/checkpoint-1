@@ -209,13 +209,11 @@
 | Actor's Goal:                             | - 피자의 품질, 서비스등을 개선하기 위해 고객들의 리뷰를 확인한다.      |
 | Participating Actors:                     | Database                                            |
 | Preconditions:                            | - 관리자권한으로 로그인된 상태이다.                  |
-|                                           | - 관리자페이지에서 Review 버튼을 보고있다.        |
-| Postconditions:                           | - 각 피자제품에 해당하는 고객의 Review를 볼 수 있다. |
+|                                           | - 피자관리페이지에서 해당 피자의 Review 버튼을 보고있다.        |
+| Postconditions:                           | - 각 피자제품에 해당하는 고객의 Review를 볼 수 있다. Review보기 페이지에 접속한 상태 |
 | Flow of Events for Main Success Scenario: |                                                     |
-| →                                         | 1. Review 버튼을 누른다.                            |
-| ←                                         | 2. System은 등록되어 있는 피자목록을 보여준다.       |
-| →                                         | 3. Administrator는 확인하고 싶은 Pizza를 선택한다.   |
-| ←                                         | 2. System은 Database에서 해당피자의 Review정보를 가져와서 Administrator에게 보여준다.     |
+| →                                         | 1. Review를 보고싶은 피자의 Review 버튼을 누른다.                            |
+| ←                                         | 2. System은 해당피자의 Review를 가져와서 관리자에게 보여준다.       |
 
 ---
 
