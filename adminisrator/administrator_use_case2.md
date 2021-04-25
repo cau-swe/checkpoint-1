@@ -107,7 +107,7 @@
 | Participating Actors:                     | Database                                            |
 | Preconditions:                            | - Database에 관리자로 등록이 되어있어야 한다.        |
 |                                           | - 프로그램을 실행하여 로그인 화면에 접속된 상태이다. |
-| Postconditions:                           | - 관리자권한을 가지고 관리페이지에 접속이 되어있다.  |
+| Postconditions:                           | - 관리자권한을 가지고 피자관리페이지에 접속이 되어있다.  |
 | Flow of Events for Main Success Scenario: |                                                     |
 | →                                         | 1. ID입력창에 ID를 입력하고 비밀번호 입력창에 비밀번호를 입력한 다음 로그인버튼을 누른다.       |
 | ←                                         | 2. System은 입력된 ID와 비밀번호가 Database에 있는지 확인하고 관리자인지 확인한다.       |
@@ -118,8 +118,6 @@
 | ←                                         | 1. System은 Administrator에게 잘못된 ID또는 잘못된 비밀번호라고 알려준다. |
 | →                                         | 2. Administrator는 ID와 비밀번호를 다시 입력한다.|
 |                                           | 3. 위에 3,4번과정과 같다.|
-|2b. 해당계정이 관리자가 아닌 경우||
-| ←                                         | 1. System은 직원이 로그인시도를 하는 경우 직원의 권한을 주고, 고객일 경우 고객권한을 부여한다.|
 
 ---
 
