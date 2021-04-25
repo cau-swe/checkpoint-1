@@ -341,7 +341,7 @@
 
 | Concept Pair                    | Association Description                                      | Association Name |
 | ------------------------------- | ------------------------------------------------------------ | ---------------- |
-| AddRequest ↔ Controller         | Controller는 회원가입 정보 입력에 대한 요청을 전달받는다.   | receives         |
+| SignUpRequest ↔ Controller         | Controller는 회원가입 정보 입력에 대한 요청을 전달받는다.   | receives         |
 | Controller ↔ PageMaker          | Controller는 InputPage를 만들거나 UpdatedPage를 만들거나 Warning을 만들것을 요청한다. 그리고 만들어진 page를 받는다. | conveys request |
 | PageMaker  ↔ InputPage          | PageMaker는 InputPage를 만든다.                               | prepares        |
 | PageMaker ↔ Warning             | PageMaker는 Warning을 만든다.                                 | prepares        |
