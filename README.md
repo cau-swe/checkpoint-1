@@ -73,9 +73,9 @@
  | |CUSTOMER-MENU 팀 | EMPLOYEE-ORDER 팀 |ADMINISTRATOR-ACCOUNT 팀|
  |:--:|:--:|:--:|:--:|
  |UI 담당 부분|customer|employee|administrator|
+ |프런트|Android|web|iOS|
  |Domain 담당 부분|menu|order|account|
- |프런트|iOS|iOS|Android|
- |백엔드|미정|미정|미정|
+ |백엔드|java-spring|java-spring|java-spring|
 
 
  
