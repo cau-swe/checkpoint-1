@@ -552,3 +552,34 @@
 | Controller ↔ PageMaker          | Controller는 LogInPage를 만들것을 요청한다. 그리고 만들어진 page를 받는다. | conveys request |
 | PageMaker ↔ LogInPage        | PageMaker는 LogInPage를 만든다.     | prepares  |
 | Controller ↔  LogInPage       | Controller는 LogInPage를 관리자에게 보여준다.      | posts |
+
+
+## UC-1 Log in
+### Extracting the Responsibility
+
+| Responsibility Description                                   | Type | Concept Name        |
+| ------------------------------------------------------------ | :--: | ------------------- |
+| Use Case와 관련된 모든 컨셉들의 행동을 관리하고, 적절한 컨셉에게 위임한다. |  D   | Controller   |
+| Log in을 할 수 있는 페이지  , ID와 비밀번호를 입력할 수 있다.   | K     | LogInPage   |
+| Log in 요청 정보, 관리자가 입력한 ID와 비밀번호를 가지고 있다.  | K    | LogInRequest |
+| 유효한 Log in 계정 정보가 저장되어있는 곳               | K    | AccountStorage  |
+| 입력된 ID와 비밀번호가 올바른지 검사한다.               | D    | Verifier     |
+| Log in을 한 후에 관리자에게 보여지는 페이지             | K    | PizzaPage    |
+| Log in정보가 잘못됨을 알리는 경고문                     | K   | Warning      |
+| Pizza 페이지를 만든다.                                  | D    | PageMaker    |
+| Pizza정보를 불러오는 쿼리문 생성 및 Pizza정보 제공       | D    | DatabaseConnection |
+
+### Extracting the Associations
+
+| Concept Pair                    | Association Description                                      | Association Name |
+| ------------------------------- | ------------------------------------------------------------ | ---------------- |
+| LogInPage ↔ Controller          | Controller는 Log in 페이지를 관리자에게 보여준다.             | posts |
+| LogInRequest ↔ Controller       | Controller는 Log in을 요청받는다.                             | receives|
+| Controller ↔ Verifier           | Controller는 Verifier에게 로그인 요청을 전달한다.      | conveys requests  |
+| Verifier ↔ LogInRequest         | Verifier는 Log in 정보가 올바른지 검사한다.             | verifies    |
+| Verifier ↔ AccountStorage       | Verifier는 AccountStorage에서 유효한 계정정보를 가져온다.      | retrieves valid accounts |
+| Controller ↔ PageMaker          | Controller는 PizzaPage를 만들 것을 요청한다. 그리고 만들어진 page를 받는다. | conveys request |
+| Controller ↔ DatabaseConnection | Controller는 Database에서 Pizza정보를 요청한다.                 | conveys request |
+| PageMaker ↔ PizzaPage           | PizzaMaker는 PizzaMaker를 만든다.    | prepares    |
+| DataConnection ↔ PageMaker      | DataConnection은 PageMaker에 Pizza 정보를 제공한다.   | provides data   |
+| Controller ↔  PizzaPage         | Controller는 PizzaPage를 관리자에게 보여준다.      | posts |
