@@ -393,6 +393,10 @@
 | StoreRequest  | input parameters  | 이름, 주소, 전화번호, ID, 비밀번호, 권한              |
 | PageMaker     | input parameters  | UpdatedPage를 만들때 필요하다.          |
 
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995284-a5232500-a615-11eb-8b09-5f2b4d7da4df.png)
+
+
 
 ## UC-13 Set Admin Account
 ### Extracting the Responsibility
@@ -432,6 +436,9 @@
 | ------------- | ----------------- | --------------------------------------- |
 | StoreRequest  | input parameters  | ID, 비밀번호, 권한              |
 
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995294-b2d8aa80-a615-11eb-8685-c6f581c15108.png)
+  
 
 ## UC-14 Set Employee Account
 ### Extracting the Responsibility
@@ -470,7 +477,10 @@
 | Concept       | Attributes        | Attribute Description                   |
 | ------------- | ----------------- | --------------------------------------- |
 | StoreRequest  | input parameters  | ID, 비밀번호, 권한              |
-
+  
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995316-c08e3000-a615-11eb-88b8-1f4c2c2eb77f.png)
+  
 
 ## UC-15 View Pizza Information
 ### Extracting the Responsibility
@@ -493,7 +503,10 @@
 | PageMaker ↔ PizzaPage           | PizzaMaker는 PizzaMaker를 만든다.    | prepares    |
 | DataConnection ↔ PageMaker      | DataConnection은 PageMaker에 Pizza 정보를 제공한다.   | provides data   |
 | Controller ↔  PizzaPage         | Controller는 PizzaPage를 관리자에게 보여준다.      | posts |
-
+  
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995331-cc79f200-a615-11eb-9647-fb32a4b0ce9f.png)
+  
 
 ## UC-16 View Employee Information
 ### Extracting the Responsibility
@@ -516,7 +529,10 @@
 | PageMaker ↔ EmployeePage           | PizzaMaker는 EmployeeMaker를 만든다.    | prepares    |
 | DataConnection ↔ PageMaker      | DataConnection은 PageMaker에 Employee 정보를 제공한다.   | provides data   |
 | Controller ↔  EmployeePage         | Controller는 EmployeePage를 관리자에게 보여준다.      | posts |
-
+  
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995353-d7348700-a615-11eb-9a4a-e5439043f1c6.png)
+  
 
 ## UC-17 View Customer Information
 ### Extracting the Responsibility
@@ -539,6 +555,10 @@
 | PageMaker ↔ CustomerPage        | PageMaker는 CustomerPage를 만든다.     | prepares  |
 | DataConnection ↔ PageMaker      | DataConnection은 PageMaker에 Customer 정보를 제공한다.   | provides data   |
 | Controller ↔  CustomerPage       | Controller는 CustomerPage를 관리자에게 보여준다.      | posts |
+  
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995372-e1ef1c00-a615-11eb-8828-43bd3580edf6.png)
+  
 
 ## UC-18 View Account
 ### Extracting the Responsibility
@@ -561,7 +581,10 @@
 | PageMaker ↔ AccountPage        | PageMaker는 AccountPage를 만든다.     | prepares  |
 | DataConnection ↔ PageMaker      | DataConnection은 PageMaker에 Account 정보를 제공한다.   | provides data   |
 | Controller ↔  AccountPage       | Controller는 AccountPage를 관리자에게 보여준다.      | posts |
-
+   
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995384-ea475700-a615-11eb-926f-61cfc72f7466.png)
+  
 
 ## UC-19 Log out
 ### Extracting the Responsibility
@@ -582,7 +605,12 @@
 | PageMaker ↔ LogInPage        | PageMaker는 LogInPage를 만든다.     | prepares  |
 | Controller ↔  LogInPage       | Controller는 LogInPage를 관리자에게 보여준다.      | posts |
 
+  
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995391-f3382880-a615-11eb-8542-d76b03f62e9e.png)
 
+  
+  
 ## UC-1 Log in
 ### Extracting the Responsibility
 
@@ -612,3 +640,8 @@
 | PageMaker ↔ PizzaPage           | PizzaMaker는 PizzaMaker를 만든다.    | prepares    |
 | DataConnection ↔ PageMaker      | DataConnection은 PageMaker에 Pizza 정보를 제공한다.   | provides data   |
 | Controller ↔  PizzaPage         | Controller는 PizzaPage를 관리자에게 보여준다.      | posts |
+
+   
+### Diagram  
+![image](https://user-images.githubusercontent.com/37579661/115995398-fcc19080-a615-11eb-8d3d-9d823633a037.png)
+  
