@@ -30,7 +30,10 @@
 관리자계정정보(ID, 비밀번호)
 직원계정정보(ID, 비밀번호)
 
-[Use Case Diagram.pdf](https://github.com/cau-swe/checkpoint-1/files/6372125/Use.Case.Diagram.pdf)
+![Use Case Diagram_page-0001](https://user-images.githubusercontent.com/53007295/115996846-eae2ec00-a61b-11eb-8509-c9ac099718f5.jpg)
+![Use Case Diagram_page-0002](https://user-images.githubusercontent.com/53007295/115996850-ef0f0980-a61b-11eb-9d79-32c858554001.jpg)
+![Use Case Diagram_page-0003](https://user-images.githubusercontent.com/53007295/115996860-f2a29080-a61b-11eb-8c66-32b65c06ee81.jpg)
+
 
 #### Generalizations
 - Add Pizza, Edit Pizza, Delete Pizza → Manage Pizza(UC-10)
