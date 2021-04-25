@@ -111,8 +111,7 @@
 | Flow of Events for Main Success Scenario: |                                                     |
 | →                                         | 1. ID입력창에 ID를 입력하고 비밀번호 입력창에 비밀번호를 입력한 다음 로그인버튼을 누른다.       |
 | ←                                         | 2. System은 입력된 ID와 비밀번호가 Database에 있는지 확인하고 관리자인지 확인한다.       |
-| ←                                         | 3. System은 Administrator에게 로그인에 성공했다고 알려주고 관리자권한을 부여한다.   |
-| ←                                         | 4. System은 Administrator에게 관리페이지를 보여준다.     |
+| ←                                         | 3. System은 Administrator에게 Pizza정보를 불러온 후, 피자관리페이지를 보여준다.     |
 |Flow of Events for Extensions (Alternate Scenarios): ||
 |2a. 입력된 ID와 비밀번호가 Database에 없는 경우||
 | ←                                         | 1. System은 Administrator에게 잘못된 ID또는 잘못된 비밀번호라고 알려준다. |
