@@ -41,8 +41,19 @@
 
  <h2 align="center">  :adhesive_bandage: requirements  </h2>   
  
-  ##### 1. [customer](Customer.md)
-  ##### 2. [employee](Employee.md)
-  ##### 3. [administrator](Administrator.md)
+  #### 1. [customer](Customer.md)
+  #### 2. [employee](Employee.md)
+  #### 3. [administrator](Administrator.md)
 
 
+
+</br>
+
+ <h2 align="center">  👱 Use Cases & Domain Model 
+
+| |Customer|Employee|Administrator|
+|:--:|:--:|:--:|:--:|
+|Use Case|[Customer Use Case]()|[Employee Use Case]()|[Administrator Use Case]()|
+|Domain Model|[Customer Domain Model]()|[Employee Domain Model]()|[Administrator Domain Model]()|
+
+ </h2>   
