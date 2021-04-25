@@ -74,4 +74,8 @@
  |:--:|:--:|:--:|:--:|
  |UI 담당 부분|customer|employee|administrator|
  |Domain 담당 부분|menu|order|account|
+ |프런트|iOS|iOS|Android|
+ |백엔드|미정|미정|미정|
+
+
  
