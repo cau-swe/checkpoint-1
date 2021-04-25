@@ -30,19 +30,35 @@
 
 #### :email: Scenarios
 
-관리자가 online pizza ordering system에 접속하면, username과 password를 입력하는 창이 뜨고 해당 정보를 입력하여 로그인을 합니다. 시스템에 접속하면 상단에 “Add Pizza”, “Edit Pizza”, “Update Order Status”, “View Feedback” 4개의 옵션이 있습니다. “Add Pizza”를 눌러 피자 사이즈와 사진, 이름, 설명, 가격을 입력하여 새로운 피자의 정보를 입력하여 추가합니다. “Edit Pizza”를 선택하면 기존 피자들에 대해 변경사항이 있을 경우 정보를 수정할 수도, 삭제할 수도 있습니다. 또한 “Update Order Status”에서는 주문 정보 리스트를 확인하고, 다 만들어지고 배달이 시작된 주문건은 배달 중, 배달이 완료된 주문은 배달 완료로 상태를 업데이트합니다. "View Feedback"을 선택하면 유저들이 남긴 리뷰들을 볼 수 있습니다.
+관리자가 online pizza ordering system에 접속하면, username과 password를 입력하는 창이 뜨고 해당 정보를 입력하여 로그인을 합니다. 시스템에 접속하면 상단에 “Add Pizza”, “Edit Pizza”, “View Order Record”, “View Feedback”, "Manage Employee" 5개의 옵션이 있습니다. “Add Pizza”를 눌러 피자 사이즈와 사진, 이름, 설명, 가격을 입력하여 새로운 피자의 정보를 입력하여 추가합니다. “Edit Pizza”를 선택하면 기존 피자들에 대해 변경사항이 있을 경우 정보를 수정할 수도, 삭제할 수도 있습니다. 또한 “View Order Record”에서는 주문 정보 기록을 확인할 수 있습니다. "View Feedback"을 선택하면 유저들이 남긴 리뷰들을 볼 수 있습니다. "Manage Employee"를 선택하면 신규 직원을 고용했을 시 직원정보를 추가할 수 있고, 직원이 일을 그만두는 경우는 삭제할 수 있고, 직원에 대한 정보가 변경됐을시 정보를 수정할 수 있습니다. 직원에 대한 정보는 이름, 전화번호, 월급이 있습니다.
+
 
 고객도 시스템에 처음 접속하여 username과 password를 입력하여 로그인합니다. 상단에는 “Menu”, “View Cart”, “Track Order” 3가지 옵션이 있습니다. “Menu”를 선택하여 메뉴 중에 원하는 피자를 선택할 수 있고 해당 피자에 대한 리뷰들을 볼 수 있습니다. 추가 요청사항을 입력한 뒤 장바구니에 담기를 누릅니다. 장바구니에서 주문을 완료하면 “Track Order”에서 주문 상태와 예상시간을 확인할 수 있습니다.
 
-직원은 시스텀에 접속하여
+
+직원이 관리자에게 권한을 얻은 후, online pizza ordering system에 접속하면, username과 password를 입력하는 창이 뜨고 정보를 입력하여 로그인을 합니다. 주문 관리 페이지에 접속하여 주문 정보 리스트를 확인할 수 있습니다. 주문 정보 리스트를 통해 주문자의 주소, 핸드폰 번호와 주문 메뉴, 추가 요청 사항을 확인합니다. 또한 주문이 최초로 만들어졌을 때에는 대기 중 상태이고, 이를 확인하여 준비 중 상태로 바꿀 수 있습니다. 이후 배달이 시작된 주문건은 배달 중, 배달이 완료된 주문은 배달 완료로 상태를 업데이트하여 고객들로 하여금 본인의 주문 상태를 알 수 있도록 합니다.
 
 
 </br>
 
  <h2 align="center">  :adhesive_bandage: requirements  </h2>   
  
-  ##### 1. [customer](Customer.md)
-  ##### 2. [employee](Employee.md)
-  ##### 3. [administrator](Administrator.md)
+  #### 1. [customer](Customer.md)
+  #### 2. [employee](Employee.md)
+  #### 3. [administrator](Administrator.md)
 
+
+
+</br>
+
+ <h2 align="center">  👱 Use Cases & Domain Model  </h2>   
+
+ <h4 align="center"> 
+ 
+| |Customer|Employee|Administrator|
+|:--:|:--:|:--:|:--:|
+|Use Case|[Customer Use Case]()|[Employee Use Case]()|[Administrator Use Case]()|
+|Domain Model|[Customer Domain Model]()|[Employee Domain Model]()|[Administrator Domain Model]()|
+
+ </h4> 
 
