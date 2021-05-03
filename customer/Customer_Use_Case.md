@@ -36,13 +36,11 @@
 |   FR4   |  2   |   X  |      |      |      |      |  X   |      |
 |   FR5   |  4   |   X  |   X  |      |      |      |      |   X  |
 |   FR6   |  4   |   X  |   X  |      |      |      |      |   X  |
-|   FR7   |  3   |      |      |      |      |      |      |   X  |
-|   FR8   |  4   |      |      |      |      |      |      |   X  |
-|   FR9   |  3   |   X  |      |   X  |   X  |      |      |   X  |
-|   FR10  |  4   |   X  |      |   X  |   X  |      |      |   X  |
-|   FR11  |  2   |   X  |      |   X  |      |   X  |      |   X  |
+|   FR7   |  3   |   X  |      |   X  |   X  |      |      |   X  |
+|   FR8  |  4   |   X  |      |   X  |   X  |      |      |   X  |
+|   FR9  |  2   |   X  |      |   X  |      |   X  |      |   X  |
 |  Max PW |      |   5  |   4  |   5  |   4  |   2  |   2  |   5  |
-| Total PW|      |   29 |   8  |   14 |   7  |   2  |   2  |  34  |
+| Total PW|      |   29 |   8  |   14 |   7  |   2  |   2  |  27  |
 
 
 ### Schema for Detailed Use Cases
